@@ -6,144 +6,323 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ODELL</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+
+    .stackedit__left {
+      background-color: #4dabf726;
+      transition: background-color 0.3s;
+    }
+
+    .stackedit__toc {
+      padding: 20px;
+    }
+
+    .stackedit__toc ul {
+      list-style: none;
+      padding-left: 15px;
+    }
+
+    .stackedit__toc>ul {
+      padding-left: 0;
+    }
+
+    .stackedit__toc a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+      display: block;
+      padding: 4px 0;
+    }
+
+    .stackedit__toc a:hover {
+      color: #4dabf7;
+    }
+
+    .theme-toggle:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .theme-toggle svg {
+      stroke: #000000;
+      transition: stroke 0.3s;
+    }
+
+    .dark-mode .theme-toggle svg {
+      stroke: #ffffff;
+    }
+
+    .dark-mode .theme-toggle:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .dark-mode {
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+
+    .dark-mode .stackedit__left {
+      background-color: #2d2d2d;
+    }
+
+    .dark-mode .stackedit__toc a {
+      color: #e0e0e0;
+    }
+
+    .dark-mode .stackedit__toc a:hover {
+      color: #4dabf7;
+    }
+
+    .dark-mode .stackedit__html {
+      color: #ffffff;
+    }
+
+    .dark-mode .stackedit__html a {
+      color: #4dabf7;
+    }
+
+    .dark-mode .stackedit__html h1,
+    .dark-mode .stackedit__html h2,
+    .dark-mode .stackedit__html h3,
+    .dark-mode .stackedit__html h4,
+    .dark-mode .stackedit__html h5,
+    .dark-mode .stackedit__html h6 {
+      color: #ffffff;
+    }
+
+    .dark-mode .stackedit__toc {
+      background-color: #2d2d2d;
+      color: #ffffff;
+    }
+
+    .dark-mode .stackedit__toc a {
+      color: #4dabf7;
+    }
+  </style>
 </head>
 
 <body class="stackedit">
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </button>
   <div class="stackedit__left">
     <div class="stackedit__toc">
-      
-<ul>
-<li><a href="#odell">ODELL</a>
-<ul>
-<li><a href="#contact">Contact</a>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#current-projects">Current Projects</a></li>
-<li><a href="#guides">Guides</a></li>
-<li><a href="#words-by-me">Words by me</a></li>
-<li><a href="#other-bitcoin-resources">Other Bitcoin Resources</a></li>
-<li><a href="#bitcoin-tools">Bitcoin Tools</a></li>
-<li><a href="#other-tools">Other Tools</a></li>
-<li><a href="#sats-fund-me">sats fund me</a></li>
-<li><a href="#need-some-help-or-guidance">Need some help or guidance?</a></li>
-<li><a href="#liability-disclosure">Liability Disclosure</a></li>
-<li><a href="#sponsor-disclosure">Sponsor Disclosure</a></li>
-<li><a href="#investment-disclosure">Investment Disclosure</a></li>
-<li><a href="#canary">Canary</a></li>
-</ul>
-</li>
-</ul>
+
+      <ul>
+        <li><a href="#odell">ODELL</a>
+          <ul>
+            <li><a href="#contact">Contact</a>
+              <ul>
+                <li>
+                  <ul>
+                    <li>
+                      <ul>
+                        <li></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#current-projects">Current Projects</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#words-by-me">Words by me</a></li>
+            <li><a href="#other-bitcoin-resources">Other Bitcoin Resources</a></li>
+            <li><a href="#bitcoin-tools">Bitcoin Tools</a></li>
+            <li><a href="#other-tools">Other Tools</a></li>
+            <li><a href="#sats-fund-me">sats fund me</a></li>
+            <li><a href="#need-some-help-or-guidance">Need some help or guidance?</a></li>
+            <li><a href="#liability-disclosure">Liability Disclosure</a></li>
+            <li><a href="#sponsor-disclosure">Sponsor Disclosure</a></li>
+            <li><a href="#investment-disclosure">Investment Disclosure</a></li>
+            <li><a href="#canary">Canary</a></li>
+          </ul>
+        </li>
+      </ul>
 
     </div>
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
       <h1 id="odell">ODELL</h1>
-<p><strong>Managing Partner</strong> at <a href="https://ten31.vc/">Ten31</a>. <strong>CoFounder</strong>: <a href="https://opensats.org/">OpenSats</a>, <a href="https://www.btcpolicy.org">Bitcoin Policy Institute</a>, <a href="https://bitcoinpark.com/">Bitcoin Park</a>. <strong>Host</strong>: <a href="https://citadeldispatch.com">Citadel Dispatch</a>, <a href="https://rhr.tv">Rabbit Hole Recap</a>.</p>
-<h2 id="contact">Contact</h2>
-<h6 id="signal-odell.42"><a href="https://signal.me/#eu/HRcP2L9gdya44jj6lvfVtPNsyxRdiTsK2GIuAEFuciFj9ePBDHtKAbtGpyEffTsU">Signal</a>: <code>ODELL.42</code></h6>
-<h6 id="nostr-odellprimal.net"><a href="https://primal.net/odell">Nostr</a>: <code>odell@primal.net</code></h6>
-<h6 id="simplex-odell"><a href="https://simplex.chat/contact#/?v=2-4&amp;smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2FYsjR0DHt4mb8Ojcm7pXGonhZE1Sbu_mB%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAfcIfVMSAWy615opqvRBq6MovGgaZ80uPYYfFrKDkIQM%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion">SimpleX</a>: <code>ODELL</code></h6>
-<h6 id="github-modl21"><a href="https://github.com/modl21">GitHub</a>: <code>@modl21</code></h6>
-<h2 id="current-projects">Current Projects</h2>
-<p><a href="https://ten31.vc/">Ten31</a><br>
-<a href="https://opensats.org/">OpenSats</a><br>
-<a href="https://bitcoinpark.com/">Bitcoin Park</a><br>
-<a href="https://citadeldispatch.com/">Citadel Dispatch</a><br>
-<a href="https://rhr.tv">Rabbit Hole Recap</a><br>
-<a href="https://www.btcpolicy.org">Bitcoin Policy Institute</a></p>
-<h2 id="guides">Guides</h2>
-<p><a href="https://werunbtc.com">werunbtc.com</a><br>
-<a href="https://werunbtc.com/muun">muun</a> - easily receive or spend bitcoin on your phone<br>
-<a href="https://werunbtc.com/phoenix">phoenix</a> - easily use the lightning network on your phone<br>
-<a href="https://werunbtc.com/coldcard">coldcard</a> - long term bitcoin savings kept offline<br>
-<a href="https://werunbtc.com/bitcoincore">bitcoin core</a> - run and use your own bitcoin node<br>
-<a href="https://werunbtc.com/utxos">bitcoin transaction fees</a> - utxo management<br>
-<a href="https://werunbtc.com/opendime">opendime</a> - a fun way to gift bitcoin<br>
-<a href="https://www.podpage.com/citadeldispatch/citadel-dispatch-e43-bitcoin-for-beginners-with-bitcoinq_a/">getting started with bitcoin</a> - audio, everything important from start to finish<br>
-<a href="https://odell.xyz/#bitcoin-tools">bitcoin tools and resources</a> - a list of my favorites</p>
-<h2 id="words-by-me">Words by me</h2>
-<ul>
-<li>The <a href="https://discreetlog.com">Discreet Log</a></li>
-</ul>
-<h2 id="other-bitcoin-resources">Other Bitcoin Resources</h2>
-<p><a href="http://nobsbitcoin.com/">Newsfeed</a><br>
-<a href="https://bitcoin.clarkmoody.com/dashboard/">Data Dashboard</a><br>
-<a href="https://21lessons.com/">21 Lessons</a><br>
-<a href="https://bitcoin-only.com/#privacy">Privacy Resources</a><br>
-<a href="https://bitcoiner.guide/">Bitcoin Q&amp;A Guides</a><br>
-<a href="https://bitcoinops.org/">Bitcoin Optech</a><br>
-<a href="https://www.youtube.com/ministryofnodes">Ministry of Nodes Guides</a><br>
-<a href="https://openoms.gitbook.io/lightning-node-management/">Lightning Node Management Guide</a><br>
-<a href="https://www.usefultulips.org/Combined_World_Page.html">P2P Trade Volumes</a><br>
-<a href="https://bitcoin.stackexchange.com/">Bitcoin Stack Exchange</a><br>
-<a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin Wiki</a><br>
-<a href="https://bitcoinacks.com/">Bitcoin ACKs</a> - Bitcoin Core Activity Tracker<br>
-<a href="https://ln.guide/">Getting Started with Lightning Network</a><br>
-<a href="https://www.keepitsimplebitcoin.com/guides/">Keep It Simple Bitcoin Guides</a><br>
-<a href="https://www.bitcoinqna.com/post/verifying-software-101">Software Verification Guide</a><br>
-<a href="https://medium.com/@acparas/gpg-quickstart-guide-d01f005ca99">General GPG Guide</a><br>
-<a href="https://estudiobitcoin.com/">Spanish Language Bitcoin Guides</a><br>
-<a href="https://bisq.wiki/Main_Page">Bisq Wiki</a><br>
-<a href="https://anonymousplanet.org/guide.html">The Hitchhiker’s Guide to Online Anonymity</a><br>
-<a href="https://techlore.tech/goincognito.html">Techlore Go Incognito Course</a><br>
-<a href="https://k3tan.com/">Ketan’s Blog</a><br>
-<a href="https://learn.saylor.org/course/PRDV151">Saylor Academy - Bitcoin for Everybody</a><br>
-<a href="https://www.econoalchemist.com/">Econoalchemist’s Guides</a><br>
-<a href="https://diverter.hostyourown.tools/">Diverter’s Guides</a><br>
-<a href="https://bitcoin-resources.com/">Bitcoin-Resources</a></p>
-<h2 id="bitcoin-tools">Bitcoin Tools</h2>
-<p>Hardware wallets (<em>best for savings</em>): <a href="https://coldcardwallet.com/">ColdCard</a> (BEST), <a href="https://bitkey.world">Bitkey</a> (EASY), <a href="https://seedsigner.com/">SeedSigner</a> (DIY)<br>
-Android wallets: <a href="https://phoenix.acinq.co/">Phoenix</a>, <a href="https://zeusln.app/">Zeus</a>, <a href="https://cashu.me">Cashu.me</a>, <a href="https://blixtwallet.github.io/">Blixt Wallet</a>, <a href="https://nunchuk.io/">Nunchuk</a><br>
-iOS wallets: <a href="https://phoenix.acinq.co/">Phoenix</a>, <a href="https://zeusln.app/">Zeus</a>, <a href="https://cashu.me">Cashu.me</a>, <a href="https://blixtwallet.github.io/">Blixt Wallet</a>, <a href="https://nunchuk.io/">Nunchuk</a><br>
-Lightning wallets: <a href="https://zeusln.app/">Zeus</a>, <a href="https://phoenix.acinq.co/">Phoenix</a>, <a href="https://blixtwallet.github.io/">Blixt Wallet</a><br>
-Desktop wallets:  <a href="https://www.sparrowwallet.com/">Sparrow Wallet</a>, <a href="https://bitcoin.org/en/bitcoin-core/">Core</a>, <a href="https://proton.me">Proton</a><br>
-Self Hosted Multisig: <a href="https://www.sparrowwallet.com/">Sparrow Wallet</a>, <a href="https://unchained-capital.github.io/caravan/#/">Caravan</a>, <a href="https://electrum.org/">Electrum</a>, <a href="https://nunchuk.io/">Nunchuk</a><br>
-Hosted Multisig: <a href="https://unchained-capital.com/">Unchained Capital</a>, <a href="https://keys.casa/">Casa</a><br>
-Favorite block explorers: <a href="https://mempool.space/">Mempool.Space</a>, <a href="https://blockstream.info/">Blockstream</a><br>
-Mempool <a href="https://mempool.space/">Status</a><br>
-Transaction <a href="https://mempool.observer/monitor/">Monitor</a><br>
-Prebuilt dedicated node: <a href="https://start9.com/">Start9</a><br>
-Build your own dedicated node:  <a href="https://start9.com/">Start9</a>, <a href="https://raspiblitz.com/">RaspiBlitz</a>, <a href="https://getumbrel.com/">Umbrel</a></p>
-<h2 id="other-tools">Other Tools</h2>
-<p>Prebuilt computers: <a href="https://system76.com/">System76</a>, <a href="https://puri.sm/">Purism</a><br>
-Desktop OS: <a href="https://pop.system76.com/">Pop!OS</a>, <a href="https://tails.boum.org/">Tails</a><br>
-Browser: <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>, <a href="https://mullvad.net/en/browser">Mullvad Browser</a>, <a href="https://www.torproject.org/download/">Tor</a>, <a href="https://github.com/Eloston/ungoogled-chromium">UnGoogled Chromium</a>, <a href="https://www.chromium.org/">Chromium</a><br>
-Mobile phone: Pixel running <a href="https://grapheneos.org/">GrapheneOS</a><br>
-Messages: <a href="https://signal.org/en/">Signal</a>, <a href="https://simplex.chat/">Simplex</a>, <a href="https://threema.ch/en">Threema</a><br>
-Hosted VPN: <a href="https://mullvad.net/en/">Mullvad</a>, <a href="https://proton.me">Proton</a>, <a href="https://www.ivpn.net/">iVPN</a><br>
-Email: <a href="https://proton.me">Proton</a>, <a href="https://tutanota.com/">Tutanota</a><br>
-Cross device notes/tasks: <a href="https://standardnotes.org/">StandardNotes</a>, <a href="https://proton.me">Proton</a><br>
-Share files: <a href="https://wormhole.app">Wormhole</a>, <a href="https://onionshare.org/">Onion Share</a>, <a href="https://proton.me">Proton</a><br>
-Password manager: <a href="https://proton.me">Proton</a>, <a href="https://bitwarden.com/">BitWarden</a>, <a href="https://keepass.info/">KeePass</a><br>
-Two factor authentication: <a href="https://getaegis.app/">Aegis</a>, <a href="https://2fas.com">2FAS</a></p>
-<h2 id="sats-fund-me">sats fund me</h2>
-<p>I take pride in maintaining my independence. My voice cannot be bought. If you find my content helpful, sats are appreciated.</p>
-<p><a href="https://geyser.fund/project/citadel"><strong>DONATE</strong></a></p>
-<h2 id="need-some-help-or-guidance">Need some help or guidance?</h2>
-<p>Do not hesitate to reach out through my contact info <a href="https://odell.xyz/#contact">above</a>.</p>
-<h2 id="liability-disclosure">Liability Disclosure</h2>
-<p>My content provides education as to general privacy and security practices when using Bitcoin. Should you choose to apply the practices described in linked content with bitcoin or any other digital asset you own now or may purchase in the future, you do so at your own risk and I shall in no event be liable for any financial loss suffered. Nothing shall be construed as providing consulting, financial advice or general advice as to securing any digital asset of value.</p>
-<h2 id="sponsor-disclosure">Sponsor Disclosure</h2>
-<p><a href="https://bitcointv.com/c/rhr/videos">Rabbit Hole Recap</a> is currently sponsored by Unchained Capital, Coinkite, and Stakwork. Potential sponsors are screened heavily and they understand our opinions are not for sale. We hold our sponsors to a high standard and are often critical of them. I hope to move to a listener funded ad-free model as soon as possible. Search <strong>Rabbit Hole Recap</strong> in your favorite podcast app and click subscribe!</p>
-<p><a href="https://citadeldispatch.com/">Citadel Dispatch</a> is a free and open project that is 100% audience funded. It has never and will never have ads or sponsors.  All sats donated are held in cold storage to help fund the project long term. Search <strong>Citadel Dispatch</strong> in your favorite podcast app and click subscribe!</p>
-<h2 id="investment-disclosure">Investment Disclosure</h2>
-<p>I am a managing partner at the largest bitcoin venture fund in the world - Ten31. Our team has deployed nearly $150M to support bitcoin companies and projects over the last two years. There is no promise of paid promotion or endorsement in those agreements. You can find a full list of <a href="https://ten31.vc/home">our portfolio on our website</a>.</p>
-<h2 id="canary">Canary</h2>
-<p>If this section disappears then something is wrong that I cannot disclose.</p>
+      <p><strong>Managing Partner</strong> at <a href="https://ten31.vc/">Ten31</a>. <strong>CoFounder</strong>: <a
+          href="https://opensats.org/">OpenSats</a>, <a href="https://www.btcpolicy.org">Bitcoin Policy Institute</a>,
+        <a href="https://bitcoinpark.com/">Bitcoin Park</a>. <strong>Host</strong>: <a
+          href="https://citadeldispatch.com">Citadel Dispatch</a>, <a href="https://rhr.tv">Rabbit Hole Recap</a>.
+      </p>
+      <h2 id="contact">Contact</h2>
+      <h6 id="signal-odell.42"><a
+          href="https://signal.me/#eu/HRcP2L9gdya44jj6lvfVtPNsyxRdiTsK2GIuAEFuciFj9ePBDHtKAbtGpyEffTsU">Signal</a>:
+        <code>ODELL.42</code>
+      </h6>
+      <h6 id="nostr-odellprimal.net"><a href="https://primal.net/odell">Nostr</a>: <code>odell@primal.net</code></h6>
+      <h6 id="simplex-odell"><a
+          href="https://simplex.chat/contact#/?v=2-4&amp;smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2FYsjR0DHt4mb8Ojcm7pXGonhZE1Sbu_mB%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAfcIfVMSAWy615opqvRBq6MovGgaZ80uPYYfFrKDkIQM%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion">SimpleX</a>:
+        <code>ODELL</code>
+      </h6>
+      <h6 id="github-modl21"><a href="https://github.com/modl21">GitHub</a>: <code>@modl21</code></h6>
+      <h2 id="current-projects">Current Projects</h2>
+      <p><a href="https://ten31.vc/">Ten31</a><br>
+        <a href="https://opensats.org/">OpenSats</a><br>
+        <a href="https://bitcoinpark.com/">Bitcoin Park</a><br>
+        <a href="https://citadeldispatch.com/">Citadel Dispatch</a><br>
+        <a href="https://rhr.tv">Rabbit Hole Recap</a><br>
+        <a href="https://www.btcpolicy.org">Bitcoin Policy Institute</a>
+      </p>
+      <h2 id="guides">Guides</h2>
+      <p><a href="https://werunbtc.com">werunbtc.com</a><br>
+        <a href="https://werunbtc.com/muun">muun</a> - easily receive or spend bitcoin on your phone<br>
+        <a href="https://werunbtc.com/phoenix">phoenix</a> - easily use the lightning network on your phone<br>
+        <a href="https://werunbtc.com/coldcard">coldcard</a> - long term bitcoin savings kept offline<br>
+        <a href="https://werunbtc.com/bitcoincore">bitcoin core</a> - run and use your own bitcoin node<br>
+        <a href="https://werunbtc.com/utxos">bitcoin transaction fees</a> - utxo management<br>
+        <a href="https://werunbtc.com/opendime">opendime</a> - a fun way to gift bitcoin<br>
+        <a href="https://www.podpage.com/citadeldispatch/citadel-dispatch-e43-bitcoin-for-beginners-with-bitcoinq_a/">getting
+          started with bitcoin</a> - audio, everything important from start to finish<br>
+        <a href="https://odell.xyz/#bitcoin-tools">bitcoin tools and resources</a> - a list of my favorites
+      </p>
+      <h2 id="words-by-me">Words by me</h2>
+      <ul>
+        <li>The <a href="https://discreetlog.com">Discreet Log</a></li>
+      </ul>
+      <h2 id="other-bitcoin-resources">Other Bitcoin Resources</h2>
+      <p><a href="http://nobsbitcoin.com/">Newsfeed</a><br>
+        <a href="https://bitcoin.clarkmoody.com/dashboard/">Data Dashboard</a><br>
+        <a href="https://21lessons.com/">21 Lessons</a><br>
+        <a href="https://bitcoin-only.com/#privacy">Privacy Resources</a><br>
+        <a href="https://bitcoiner.guide/">Bitcoin Q&amp;A Guides</a><br>
+        <a href="https://bitcoinops.org/">Bitcoin Optech</a><br>
+        <a href="https://www.youtube.com/ministryofnodes">Ministry of Nodes Guides</a><br>
+        <a href="https://openoms.gitbook.io/lightning-node-management/">Lightning Node Management Guide</a><br>
+        <a href="https://www.usefultulips.org/Combined_World_Page.html">P2P Trade Volumes</a><br>
+        <a href="https://bitcoin.stackexchange.com/">Bitcoin Stack Exchange</a><br>
+        <a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin Wiki</a><br>
+        <a href="https://bitcoinacks.com/">Bitcoin ACKs</a> - Bitcoin Core Activity Tracker<br>
+        <a href="https://ln.guide/">Getting Started with Lightning Network</a><br>
+        <a href="https://www.keepitsimplebitcoin.com/guides/">Keep It Simple Bitcoin Guides</a><br>
+        <a href="https://www.bitcoinqna.com/post/verifying-software-101">Software Verification Guide</a><br>
+        <a href="https://medium.com/@acparas/gpg-quickstart-guide-d01f005ca99">General GPG Guide</a><br>
+        <a href="https://estudiobitcoin.com/">Spanish Language Bitcoin Guides</a><br>
+        <a href="https://bisq.wiki/Main_Page">Bisq Wiki</a><br>
+        <a href="https://anonymousplanet.org/guide.html">The Hitchhiker's Guide to Online Anonymity</a><br>
+        <a href="https://techlore.tech/goincognito.html">Techlore Go Incognito Course</a><br>
+        <a href="https://k3tan.com/">Ketan's Blog</a><br>
+        <a href="https://learn.saylor.org/course/PRDV151">Saylor Academy - Bitcoin for Everybody</a><br>
+        <a href="https://www.econoalchemist.com/">Econoalchemist's Guides</a><br>
+        <a href="https://diverter.hostyourown.tools/">Diverter's Guides</a><br>
+        <a href="https://bitcoin-resources.com/">Bitcoin-Resources</a>
+      </p>
+      <h2 id="bitcoin-tools">Bitcoin Tools</h2>
+      <p>Hardware wallets (<em>best for savings</em>): <a href="https://coldcardwallet.com/">ColdCard</a> (BEST), <a
+          href="https://bitkey.world">Bitkey</a> (EASY), <a href="https://seedsigner.com/">SeedSigner</a> (DIY)<br>
+        Android wallets: <a href="https://phoenix.acinq.co/">Phoenix</a>, <a href="https://zeusln.app/">Zeus</a>, <a
+          href="https://cashu.me">Cashu.me</a>, <a href="https://blixtwallet.github.io/">Blixt Wallet</a>, <a
+          href="https://nunchuk.io/">Nunchuk</a><br>
+        iOS wallets: <a href="https://phoenix.acinq.co/">Phoenix</a>, <a href="https://zeusln.app/">Zeus</a>, <a
+          href="https://cashu.me">Cashu.me</a>, <a href="https://blixtwallet.github.io/">Blixt Wallet</a>, <a
+          href="https://nunchuk.io/">Nunchuk</a><br>
+        Lightning wallets: <a href="https://zeusln.app/">Zeus</a>, <a href="https://phoenix.acinq.co/">Phoenix</a>, <a
+          href="https://blixtwallet.github.io/">Blixt Wallet</a><br>
+        Desktop wallets: <a href="https://www.sparrowwallet.com/">Sparrow Wallet</a>, <a
+          href="https://bitcoin.org/en/bitcoin-core/">Core</a>, <a href="https://proton.me">Proton</a><br>
+        Self Hosted Multisig: <a href="https://www.sparrowwallet.com/">Sparrow Wallet</a>, <a
+          href="https://unchained-capital.github.io/caravan/#/">Caravan</a>, <a
+          href="https://electrum.org/">Electrum</a>, <a href="https://nunchuk.io/">Nunchuk</a><br>
+        Hosted Multisig: <a href="https://unchained-capital.com/">Unchained Capital</a>, <a
+          href="https://keys.casa/">Casa</a><br>
+        Favorite block explorers: <a href="https://mempool.space/">Mempool.Space</a>, <a
+          href="https://blockstream.info/">Blockstream</a><br>
+        Mempool <a href="https://mempool.space/">Status</a><br>
+        Transaction <a href="https://mempool.observer/monitor/">Monitor</a><br>
+        Prebuilt dedicated node: <a href="https://start9.com/">Start9</a><br>
+        Build your own dedicated node: <a href="https://start9.com/">Start9</a>, <a
+          href="https://raspiblitz.com/">RaspiBlitz</a>, <a href="https://getumbrel.com/">Umbrel</a></p>
+      <h2 id="other-tools">Other Tools</h2>
+      <p>Prebuilt computers: <a href="https://system76.com/">System76</a>, <a href="https://puri.sm/">Purism</a><br>
+        Desktop OS: <a href="https://pop.system76.com/">Pop!OS</a>, <a href="https://tails.boum.org/">Tails</a><br>
+        Browser: <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>, <a
+          href="https://mullvad.net/en/browser">Mullvad Browser</a>, <a
+          href="https://www.torproject.org/download/">Tor</a>, <a
+          href="https://github.com/Eloston/ungoogled-chromium">UnGoogled Chromium</a>, <a
+          href="https://www.chromium.org/">Chromium</a><br>
+        Mobile phone: Pixel running <a href="https://grapheneos.org/">GrapheneOS</a><br>
+        Messages: <a href="https://signal.org/en/">Signal</a>, <a href="https://simplex.chat/">Simplex</a>, <a
+          href="https://threema.ch/en">Threema</a><br>
+        Hosted VPN: <a href="https://mullvad.net/en/">Mullvad</a>, <a href="https://proton.me">Proton</a>, <a
+          href="https://www.ivpn.net/">iVPN</a><br>
+        Email: <a href="https://proton.me">Proton</a>, <a href="https://tutanota.com/">Tutanota</a><br>
+        Cross device notes/tasks: <a href="https://standardnotes.org/">StandardNotes</a>, <a
+          href="https://proton.me">Proton</a><br>
+        Share files: <a href="https://wormhole.app">Wormhole</a>, <a href="https://onionshare.org/">Onion Share</a>, <a
+          href="https://proton.me">Proton</a><br>
+        Password manager: <a href="https://proton.me">Proton</a>, <a href="https://bitwarden.com/">BitWarden</a>, <a
+          href="https://keepass.info/">KeePass</a><br>
+        Two factor authentication: <a href="https://getaegis.app/">Aegis</a>, <a href="https://2fas.com">2FAS</a></p>
+      <h2 id="sats-fund-me">sats fund me</h2>
+      <p>I take pride in maintaining my independence. My voice cannot be bought. If you find my content helpful, sats
+        are appreciated.</p>
+      <p><a href="https://geyser.fund/project/citadel"><strong>DONATE</strong></a></p>
+      <h2 id="need-some-help-or-guidance">Need some help or guidance?</h2>
+      <p>Do not hesitate to reach out through my contact info <a href="https://odell.xyz/#contact">above</a>.</p>
+      <h2 id="liability-disclosure">Liability Disclosure</h2>
+      <p>My content provides education as to general privacy and security practices when using Bitcoin. Should you
+        choose to apply the practices described in linked content with bitcoin or any other digital asset you own now or
+        may purchase in the future, you do so at your own risk and I shall in no event be liable for any financial loss
+        suffered. Nothing shall be construed as providing consulting, financial advice or general advice as to securing
+        any digital asset of value.</p>
+      <h2 id="sponsor-disclosure">Sponsor Disclosure</h2>
+      <p><a href="https://bitcointv.com/c/rhr/videos">Rabbit Hole Recap</a> is currently sponsored by Unchained Capital,
+        Coinkite, and Stakwork. Potential sponsors are screened heavily and they understand our opinions are not for
+        sale. We hold our sponsors to a high standard and are often critical of them. I hope to move to a listener
+        funded ad-free model as soon as possible. Search <strong>Rabbit Hole Recap</strong> in your favorite podcast app
+        and click subscribe!</p>
+      <p><a href="https://citadeldispatch.com/">Citadel Dispatch</a> is a free and open project that is 100% audience
+        funded. It has never and will never have ads or sponsors. All sats donated are held in cold storage to help fund
+        the project long term. Search <strong>Citadel Dispatch</strong> in your favorite podcast app and click
+        subscribe!</p>
+      <h2 id="investment-disclosure">Investment Disclosure</h2>
+      <p>I am a managing partner at the largest bitcoin venture fund in the world - Ten31. Our team has deployed nearly
+        $150M to support bitcoin companies and projects over the last two years. There is no promise of paid promotion
+        or endorsement in those agreements. You can find a full list of <a href="https://ten31.vc/home">our portfolio on
+          our website</a>.</p>
+      <h2 id="canary">Canary</h2>
+      <p>If this section disappears then something is wrong that I cannot disclose.</p>
 
     </div>
   </div>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    }
+
+    // Check for saved theme preference
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+    }
+  </script>
 </body>
 
 </html>

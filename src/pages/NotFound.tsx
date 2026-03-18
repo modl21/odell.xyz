@@ -18,21 +18,19 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <div className="container flex min-h-screen items-center justify-center py-16">
-        <div className="w-full max-w-xl rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 text-center shadow-[0_24px_100px_rgba(0,0,0,0.35)] backdrop-blur-xl md:p-12">
-          <p className="text-xs font-medium uppercase tracking-[0.32em] text-primary/75">404</p>
-          <h1 className="mt-4 font-serif text-5xl tracking-tight md:text-6xl">Page not found</h1>
-          <p className="mt-5 text-lg leading-8 text-muted-foreground">
-            The page you are looking for could not be found. Return to the homepage to continue browsing.
-          </p>
-          <a
-            href="/"
-            className="mt-8 inline-flex rounded-full border border-white/10 bg-white/[0.04] px-5 py-3 text-sm font-medium text-foreground underline-offset-4 transition-colors hover:bg-white/[0.08] hover:text-primary"
-          >
-            Return to Home
-          </a>
-        </div>
+    <div className="flex min-h-screen items-center justify-center bg-background px-6 text-foreground">
+      <div className="max-w-sm text-center">
+        <p className="text-sm text-muted-foreground">404</p>
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight">Page not found</h1>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The page you are looking for could not be found.
+        </p>
+        <a
+          href="/"
+          className="mt-6 inline-flex rounded-md border border-border bg-card px-4 py-2 text-sm text-foreground transition-colors hover:bg-accent"
+        >
+          Return home
+        </a>
       </div>
     </div>
   );

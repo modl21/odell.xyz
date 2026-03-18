@@ -66,7 +66,6 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter Variable', 'Inter', 'system-ui', 'sans-serif'],
-				serif: ['Georgia', 'Times New Roman', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -921,20 +921,6 @@ const Index = () => {
           </div>
         </div>
       </main>
-
-      <footer className="border-t border-white/10 py-8">
-        <div className="container flex flex-col gap-4 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>Redesigned in a dark, minimalist system while preserving the original content and links.</p>
-          <a
-            href="https://shakespeare.diy"
-            target="_blank"
-            rel="noreferrer"
-            className="text-foreground underline decoration-white/15 underline-offset-4 transition-colors hover:text-primary hover:decoration-primary/60"
-          >
-            Vibed with Shakespeare
-          </a>
-        </div>
-      </footer>
     </div>
   );
 };

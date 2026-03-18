@@ -1,8 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import { useSeoMeta } from '@unhead/react';
-import { ArrowRight, ExternalLink, HandCoins, Landmark, Menu } from 'lucide-react';
-
-import { Badge } from '@/components/ui/badge';
+import { ArrowRight, ExternalLink, HandCoins, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -49,7 +47,6 @@ const sectionLinks: SectionLink[] = [
   { id: 'contact', label: 'Contact' },
   { id: 'current-projects', label: 'Current Projects' },
   { id: 'guides', label: 'Guides' },
-  { id: 'words-by-me', label: 'Words by me' },
   { id: 'other-bitcoin-resources', label: 'Other Bitcoin Resources' },
   { id: 'bitcoin-tools', label: 'Bitcoin Tools' },
   { id: 'other-tools', label: 'Other Tools' },
@@ -139,11 +136,6 @@ const guides: LinkItem[] = [
     href: '#bitcoin-tools',
     description: 'A list of my favorites.',
   },
-];
-
-const wordsByMe: LinkItem[] = [
-  { label: 'Primal', href: 'https://primal.net/odell' },
-  { label: 'The Discreet Log', href: 'https://discreetlog.com' },
 ];
 
 const otherBitcoinResources: LinkItem[] = [
@@ -564,9 +556,6 @@ const Index = () => {
         <div className="container flex h-16 items-center justify-between gap-4">
           <a href="#odell" className="flex items-center gap-3">
             <span className="font-serif text-2xl tracking-tight text-foreground">ODELL</span>
-            <span className="hidden text-[11px] uppercase tracking-[0.32em] text-muted-foreground md:inline">
-              privacy · security · bitcoin
-            </span>
           </a>
 
           <nav className="hidden items-center gap-6 lg:flex">
@@ -643,9 +632,6 @@ const Index = () => {
               <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-12">
                 <div className="space-y-8">
                   <div className="space-y-5">
-                    <Badge className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.28em] text-primary hover:bg-primary/10">
-                      Professional. Minimal. Dark.
-                    </Badge>
                     <h1 className="font-serif text-5xl tracking-tight text-foreground sm:text-6xl lg:text-7xl">
                       ODELL
                     </h1>
@@ -730,28 +716,6 @@ const Index = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="rounded-[1.5rem] border-white/10 bg-white/[0.04] shadow-none">
-                    <CardHeader className="pb-4">
-                      <CardTitle className="text-xl">Built for fast scanning</CardTitle>
-                      <CardDescription className="text-sm leading-6 text-muted-foreground">
-                        All original content retained, reorganized for clarity on desktop and mobile.
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="grid gap-3 pt-0 sm:grid-cols-2">
-                      <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-                        <p className="text-sm font-medium text-foreground">Direct contact</p>
-                        <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                          Signal, Nostr, SimpleX, Keet, GitHub, and email all remain one tap away.
-                        </p>
-                      </div>
-                      <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-                        <p className="text-sm font-medium text-foreground">Curated resources</p>
-                        <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                          Guides, tools, and disclosures are preserved with cleaner hierarchy and spacing.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
                 </div>
               </div>
             </div>
@@ -835,19 +799,6 @@ const Index = () => {
               >
                 <div className="grid gap-4 xl:grid-cols-2">
                   {guides.map((item) => (
-                    <LinkTile key={item.label} item={item} />
-                  ))}
-                </div>
-              </SectionShell>
-
-              <SectionShell
-                id="words-by-me"
-                eyebrow="Publishing"
-                title="Words by me"
-                description="Public notes, writing, and commentary."
-              >
-                <div className="grid gap-4 sm:grid-cols-2">
-                  {wordsByMe.map((item) => (
                     <LinkTile key={item.label} item={item} />
                   ))}
                 </div>
@@ -975,10 +926,6 @@ const Index = () => {
                 title="Investment Disclosure"
               >
                 <div className="rounded-[1.5rem] border border-white/10 bg-black/20 p-6">
-                  <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs uppercase tracking-[0.28em] text-primary">
-                    <Landmark className="h-3.5 w-3.5" />
-                    Transparency
-                  </div>
                   <p className="text-base leading-8 text-muted-foreground">
                     I am a managing partner at the largest bitcoin technology investor in the world - Ten31. Our team has deployed over $200M to support bitcoin companies and projects over the last two years. There is no promise of paid promotion or endorsement in those agreements. You can find a full list of <SmartLink href="https://ten31.xyz/home">our portfolio on our website</SmartLink>.
                   </p>

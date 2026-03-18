@@ -370,15 +370,6 @@ const otherToolGroups: LinkGroup[] = [
   },
 ];
 
-const heroHighlights = [
-  'Managing Partner · Ten31',
-  'CoFounder · OpenSats',
-  'CoFounder · Bitcoin Policy Institute',
-  'CoFounder · Bitcoin Park',
-  'Host · Citadel Dispatch',
-  'Host · Rabbit Hole Recap',
-];
-
 function getAnchorProps(href: string) {
   if (href.startsWith('#')) {
     return {};
@@ -677,19 +668,6 @@ const Index = () => {
                         Follow on Nostr
                       </a>
                     </Button>
-                  </div>
-
-                  <Separator className="bg-white/10" />
-
-                  <div className="flex flex-wrap gap-2.5">
-                    {heroHighlights.map((highlight) => (
-                      <div
-                        key={highlight}
-                        className="rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-sm text-muted-foreground"
-                      >
-                        {highlight}
-                      </div>
-                    ))}
                   </div>
                 </div>
 

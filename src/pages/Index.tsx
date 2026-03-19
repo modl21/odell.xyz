@@ -36,7 +36,6 @@ interface ContactItem {
 
 const navLinks = [
   { id: 'contact', label: 'Contact' },
-  { id: 'projects', label: 'Projects' },
   { id: 'guides', label: 'Guides' },
   { id: 'resources', label: 'Resources' },
   { id: 'tools', label: 'Tools' },
@@ -59,15 +58,6 @@ const contactItems: ContactItem[] = [
   { label: 'Keet', value: 'ODELL42', href: 'https://keet.io' },
   { label: 'GitHub', value: '@modl21', href: 'https://github.com/modl21' },
   { label: 'Email', value: 'odell@ten31.xyz', href: 'mailto:odell@ten31.xyz' },
-];
-
-const currentProjects: LinkItem[] = [
-  { label: 'Ten31', href: 'https://ten31.vc/' },
-  { label: 'OpenSats', href: 'https://opensats.org/' },
-  { label: 'Bitcoin Park', href: 'https://bitcoinpark.com/' },
-  { label: 'Citadel Dispatch', href: 'https://citadeldispatch.com/' },
-  { label: 'Rabbit Hole Recap', href: 'https://rhr.tv' },
-  { label: 'Bitcoin Policy Institute', href: 'https://www.btcpolicy.org' },
 ];
 
 const guides: LinkItem[] = [
@@ -319,7 +309,8 @@ const Index = () => {
               <SmartLink href="https://opensats.org/">OpenSats</SmartLink>,{' '}
               <SmartLink href="https://bitcoinpark.com/">Bitcoin Park</SmartLink>.{' '}
               <span className="text-foreground">Founding Board</span>:{' '}
-              <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>{' '}
+              <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>
+              <br />
               <span className="text-foreground">Host</span>:{' '}
               <SmartLink href="https://citadeldispatch.com">Citadel Dispatch</SmartLink>,{' '}
               <SmartLink href="https://rhr.tv">Rabbit Hole Recap</SmartLink>.
@@ -341,26 +332,6 @@ const Index = () => {
                 >
                   <span className="text-xs text-muted-foreground">{item.label}</span>
                   <span className="text-sm font-medium text-foreground">{item.value}</span>
-                </a>
-              ))}
-            </div>
-          </section>
-
-          <Divider />
-
-          {/* Current Projects */}
-          <section className="space-y-6">
-            <SectionHeading id="projects" title="Current Projects" />
-            <div className="flex flex-wrap gap-2">
-              {currentProjects.map((p) => (
-                <a
-                  key={p.label}
-                  href={p.href}
-                  {...ext(p.href)}
-                  className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3.5 py-2 text-sm text-foreground transition-colors hover:bg-accent"
-                >
-                  {p.label}
-                  <ArrowUpRight className="h-3 w-3 text-muted-foreground" />
                 </a>
               ))}
             </div>

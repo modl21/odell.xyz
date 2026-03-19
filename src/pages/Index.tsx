@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from 'react';
+import { useState, useEffect, useCallback, type ReactNode } from 'react';
 import { useSeoMeta } from '@unhead/react';
 import { ArrowUpRight, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -254,6 +254,60 @@ function DonateQR() {
 }
 
 // ---------------------------------------------------------------------------
+// Price ticker
+// ---------------------------------------------------------------------------
+
+function usePrices() {
+  const [btc, setBtc] = useState<number | null>(null);
+  const [xaut, setXaut] = useState<number | null>(null);
+
+  const fetchPrices = useCallback(async () => {
+    try {
+      const res = await fetch(
+        'https://proxy.shakespeare.diy/?url=' +
+          encodeURIComponent('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,tether-gold&vs_currencies=usd'),
+      );
+      const data = await res.json();
+      if (data.bitcoin?.usd) setBtc(data.bitcoin.usd);
+      if (data['tether-gold']?.usd) setXaut(data['tether-gold'].usd);
+    } catch {
+      // silently fail — prices are non-critical
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchPrices();
+    const id = setInterval(fetchPrices, 60_000);
+    return () => clearInterval(id);
+  }, [fetchPrices]);
+
+  return { btc, xaut };
+}
+
+function fmt(n: number | null) {
+  if (n === null) return '—';
+  return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+}
+
+function PriceTicker() {
+  const { btc, xaut } = usePrices();
+
+  return (
+    <div className="flex items-center gap-3 text-xs tabular-nums text-muted-foreground">
+      <span>
+        <span className="text-amber-400">BTC</span>{' '}
+        <span className="text-foreground">{fmt(btc)}</span>
+      </span>
+      <span className="text-border">|</span>
+      <span>
+        <span className="text-amber-400">XAUT</span>{' '}
+        <span className="text-foreground">{fmt(xaut)}</span>
+      </span>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
 // Page
 // ---------------------------------------------------------------------------
 
@@ -268,7 +322,10 @@ const Index = () => {
       {/* Header */}
       <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur-lg">
         <div className="mx-auto flex h-14 max-w-3xl items-center justify-between px-6">
-          <a href="#" className="text-lg font-semibold tracking-tight">ODELL</a>
+          <div className="flex items-center gap-4">
+            <a href="#" className="text-lg font-semibold tracking-tight">ODELL</a>
+            <PriceTicker />
+          </div>
 
           <nav className="hidden items-center gap-5 md:flex">
             {navLinks.map((l) => (

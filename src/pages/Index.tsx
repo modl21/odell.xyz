@@ -310,7 +310,7 @@ const Index = () => {
               <SmartLink href="https://bitcoinpark.com/">Bitcoin Park</SmartLink>.{' '}
               <span className="text-foreground">Founding Board</span>:{' '}
               <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>
-              <br />
+              <br /><br />
               <span className="text-foreground">Host</span>:{' '}
               <SmartLink href="https://citadeldispatch.com">Citadel Dispatch</SmartLink>,{' '}
               <SmartLink href="https://rhr.tv">Rabbit Hole Recap</SmartLink>.

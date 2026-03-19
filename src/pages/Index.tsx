@@ -266,6 +266,9 @@ const Index = () => {
           <a href="#" className="text-lg font-semibold tracking-tight">ODELL</a>
 
           <nav className="hidden items-center gap-5 md:flex">
+            <a href="https://citadelwire.com" target="_blank" rel="noreferrer" className="text-[13px] text-muted-foreground hover:text-foreground">
+              News
+            </a>
             {navLinks.map((l) => (
               <a key={l.id} href={`#${l.id}`} className="text-[13px] text-muted-foreground hover:text-foreground">
                 {l.label}
@@ -282,6 +285,11 @@ const Index = () => {
             <SheetContent side="right" className="w-64 border-border bg-background">
               <SheetTitle className="sr-only">Navigation</SheetTitle>
               <nav className="mt-8 flex flex-col gap-1">
+                <SheetClose asChild>
+                  <a href="https://citadelwire.com" target="_blank" rel="noreferrer" className="rounded-md px-3 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground">
+                    News
+                  </a>
+                </SheetClose>
                 {allSections.map((l) => (
                   <SheetClose asChild key={l.id}>
                     <a href={`#${l.id}`} className="rounded-md px-3 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground">

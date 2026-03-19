@@ -364,19 +364,26 @@ const Index = () => {
           {/* Hero */}
           <section className="space-y-6">
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">ODELL</h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              <span className="text-foreground">Managing Partner</span> at{' '}
-              <SmartLink href="https://ten31.xyz/home" className="text-amber-400 decoration-amber-400/30 hover:decoration-amber-400/60">Ten31</SmartLink>.{' '}
-              <span className="text-foreground">CoFounder</span>:{' '}
-              <SmartLink href="https://opensats.org/" className="text-amber-400 decoration-amber-400/30 hover:decoration-amber-400/60">OpenSats</SmartLink>,{' '}
-              <SmartLink href="https://bitcoinpark.com/">Bitcoin Park</SmartLink>.{' '}
-              <span className="text-foreground">Founding Board</span>:{' '}
-              <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>.
-              <br /><br />
-              <span className="text-foreground">Host</span>:{' '}
-              <SmartLink href="https://citadeldispatch.com">Citadel Dispatch</SmartLink>,{' '}
-              <SmartLink href="https://rhr.tv">Rabbit Hole Recap</SmartLink>.
-            </p>
+            <div className="max-w-2xl space-y-3 text-lg leading-relaxed text-muted-foreground">
+              <p>
+                <span className="text-foreground">Managing Partner</span> at{' '}
+                <SmartLink href="https://ten31.xyz/home" className="text-amber-400 decoration-amber-400/30 hover:decoration-amber-400/60">Ten31</SmartLink>.
+              </p>
+              <p>
+                <span className="text-foreground">CoFounder</span>:{' '}
+                <SmartLink href="https://opensats.org/" className="text-amber-400 decoration-amber-400/30 hover:decoration-amber-400/60">OpenSats</SmartLink>,{' '}
+                <SmartLink href="https://bitcoinpark.com/">Bitcoin Park</SmartLink>.
+              </p>
+              <p>
+                <span className="text-foreground">Founding Board</span>:{' '}
+                <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>.
+              </p>
+              <p>
+                <span className="text-foreground">Host</span>:{' '}
+                <SmartLink href="https://citadeldispatch.com">Citadel Dispatch</SmartLink>,{' '}
+                <SmartLink href="https://rhr.tv">Rabbit Hole Recap</SmartLink>.
+              </p>
+            </div>
             <div className="flex justify-center pt-2">
               <a
                 href="https://citadelwire.com"

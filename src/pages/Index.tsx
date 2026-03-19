@@ -65,7 +65,7 @@ const contactItems: ContactItem[] = [
 const guides: LinkItem[] = [
   { label: 'werunbtc.com', href: 'https://werunbtc.com', description: 'Practical bitcoin guides and resources.' },
   { label: 'phoenix', href: 'https://werunbtc.com/phoenix', description: 'Easily spend and receive bitcoin on your phone.', gold: true },
-  { label: 'coldcard', href: 'https://werunbtc.com/coldcard', description: 'Long term bitcoin savings kept offline.' },
+  { label: 'coldcard', href: 'https://werunbtc.com/coldcard', description: 'Long term bitcoin savings kept offline.', gold: true },
   { label: 'bitcoin core', href: 'https://werunbtc.com/bitcoincore', description: 'Run and use your own bitcoin node.' },
   { label: 'bitcoin transaction fees', href: 'https://werunbtc.com/utxos', description: 'UTXO management.' },
   { label: 'opendime', href: 'https://werunbtc.com/opendime', description: 'A fun way to gift bitcoin.' },
@@ -367,26 +367,6 @@ const Index = () => {
 
           <Divider />
 
-          {/* Other Bitcoin Resources */}
-          <section className="space-y-6">
-            <SectionHeading id="resources" title="Other Bitcoin Resources" />
-            <div className="grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2">
-              {otherBitcoinResources.map((r) => (
-                <a
-                  key={r.label}
-                  href={r.href}
-                  {...ext(r.href)}
-                  className="group flex items-center justify-between gap-3 bg-card px-4 py-3 transition-colors hover:bg-accent"
-                >
-                  <span className="text-sm text-foreground">{r.label}</span>
-                  <ArrowUpRight className="h-3 w-3 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
-                </a>
-              ))}
-            </div>
-          </section>
-
-          <Divider />
-
           {/* Bitcoin Tools */}
           <section className="space-y-8">
             <SectionHeading id="tools" title="Bitcoin Tools" />
@@ -402,6 +382,26 @@ const Index = () => {
             <SectionHeading id="other-tools" title="Other Tools" />
             <div className="space-y-6">
               {otherToolGroups.map((g) => <ToolGroup key={g.title} group={g} />)}
+            </div>
+          </section>
+
+          <Divider />
+
+          {/* Other Bitcoin Resources */}
+          <section className="space-y-6">
+            <SectionHeading id="resources" title="Other Bitcoin Resources" />
+            <div className="grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2">
+              {otherBitcoinResources.map((r) => (
+                <a
+                  key={r.label}
+                  href={r.href}
+                  {...ext(r.href)}
+                  className="group flex items-center justify-between gap-3 bg-card px-4 py-3 transition-colors hover:bg-accent"
+                >
+                  <span className="text-sm text-foreground">{r.label}</span>
+                  <ArrowUpRight className="h-3 w-3 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
+                </a>
+              ))}
             </div>
           </section>
 

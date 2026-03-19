@@ -20,6 +20,7 @@ interface LinkItem {
   href: string;
   description?: string;
   note?: string;
+  gold?: boolean;
 }
 
 interface LinkGroup {
@@ -32,6 +33,7 @@ interface ContactItem {
   label: string;
   value: string;
   href: string;
+  gold?: boolean;
 }
 
 const navLinks = [
@@ -52,17 +54,17 @@ const allSections = [
 ];
 
 const contactItems: ContactItem[] = [
-  { label: 'Signal', value: 'ODELL.42', href: 'https://signal.me/#eu/HRcP2L9gdya44jj6lvfVtPNsyxRdiTsK2GIuAEFuciFj9ePBDHtKAbtGpyEffTsU' },
-  { label: 'Nostr', value: 'odell@primal.net', href: 'https://primal.net/odell' },
+  { label: 'Signal', value: 'ODELL.42', href: 'https://signal.me/#eu/HRcP2L9gdya44jj6lvfVtPNsyxRdiTsK2GIuAEFuciFj9ePBDHtKAbtGpyEffTsU', gold: true },
+  { label: 'Nostr', value: 'odell@primal.net', href: 'https://primal.net/odell', gold: true },
   { label: 'SimpleX', value: 'ODELL', href: 'https://simplex.chat/contact#/?v=2-4&smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2FYsjR0DHt4mb8Ojcm7pXGonhZE1Sbu_mB%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAfcIfVMSAWy615opqvRBq6MovGgaZ80uPYYfFrKDkIQM%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion' },
   { label: 'Keet', value: 'ODELL42', href: 'https://keet.io' },
   { label: 'GitHub', value: '@modl21', href: 'https://github.com/modl21' },
-  { label: 'Email', value: 'odell@ten31.xyz', href: 'mailto:odell@ten31.xyz' },
+  { label: 'Email', value: 'odell@ten31.xyz', href: 'mailto:odell@ten31.xyz', gold: true },
 ];
 
 const guides: LinkItem[] = [
   { label: 'werunbtc.com', href: 'https://werunbtc.com', description: 'Practical bitcoin guides and resources.' },
-  { label: 'phoenix', href: 'https://werunbtc.com/phoenix', description: 'Easily spend and receive bitcoin on your phone.' },
+  { label: 'phoenix', href: 'https://werunbtc.com/phoenix', description: 'Easily spend and receive bitcoin on your phone.', gold: true },
   { label: 'coldcard', href: 'https://werunbtc.com/coldcard', description: 'Long term bitcoin savings kept offline.' },
   { label: 'bitcoin core', href: 'https://werunbtc.com/bitcoincore', description: 'Run and use your own bitcoin node.' },
   { label: 'bitcoin transaction fees', href: 'https://werunbtc.com/utxos', description: 'UTXO management.' },
@@ -100,24 +102,24 @@ const otherBitcoinResources: LinkItem[] = [
 
 const bitcoinToolGroups: LinkGroup[] = [
   { title: 'Offline Hardware wallets', description: 'best for savings', items: [
-    { label: 'ColdCard', href: 'https://werunbtc.com/coldcard', note: 'BEST' },
+    { label: 'ColdCard', href: 'https://werunbtc.com/coldcard', note: 'BEST', gold: true },
     { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
     { label: 'SeedSigner', href: 'https://seedsigner.com/', note: 'DIY' },
   ]},
   { title: 'Android wallets', items: [
-    { label: 'Primal', href: 'https://primal.net/downloads' }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },
-    { label: 'Phoenix', href: 'https://phoenix.acinq.co/' }, { label: 'Zeus', href: 'https://zeusln.app/' },
+    { label: 'Primal', href: 'https://primal.net/downloads', gold: true }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },
+    { label: 'Phoenix', href: 'https://phoenix.acinq.co/', gold: true }, { label: 'Zeus', href: 'https://zeusln.app/' },
     { label: 'Cashu.me', href: 'https://cashu.me' }, { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' },
     { label: 'Nunchuk', href: 'https://nunchuk.io/' },
   ]},
   { title: 'iOS wallets', items: [
-    { label: 'Primal', href: 'https://primal.net/downloads' }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },
-    { label: 'Phoenix', href: 'https://phoenix.acinq.co/' }, { label: 'Zeus', href: 'https://zeusln.app/' },
+    { label: 'Primal', href: 'https://primal.net/downloads', gold: true }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },
+    { label: 'Phoenix', href: 'https://phoenix.acinq.co/', gold: true }, { label: 'Zeus', href: 'https://zeusln.app/' },
     { label: 'Cove', href: 'https://covebitcoinwallet.com' }, { label: 'Cashu.me', href: 'https://cashu.me' },
     { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' }, { label: 'Nunchuk', href: 'https://nunchuk.io/' },
   ]},
   { title: 'Desktop wallets', items: [
-    { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/' }, { label: 'Core', href: 'https://bitcoin.org/en/bitcoin-core/' },
+    { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Core', href: 'https://bitcoin.org/en/bitcoin-core/' },
     { label: 'Proton', href: 'https://proton.me' },
   ]},
   { title: 'Self Hosted Multisig', items: [
@@ -132,26 +134,26 @@ const bitcoinToolGroups: LinkGroup[] = [
   ]},
   { title: 'Mempool', items: [{ label: 'Status', href: 'https://mempool.space/' }] },
   { title: 'Transaction', items: [{ label: 'Monitor', href: 'https://mempool.observer/monitor/' }] },
-  { title: 'Prebuilt dedicated node', items: [{ label: 'Start9', href: 'https://start9.com/' }] },
+  { title: 'Prebuilt dedicated node', items: [{ label: 'Start9', href: 'https://start9.com/', gold: true }] },
   { title: 'Build your own dedicated node', items: [
-    { label: 'Start9', href: 'https://start9.com/' }, { label: 'RaspiBlitz', href: 'https://raspiblitz.com/' },
+    { label: 'Start9', href: 'https://start9.com/', gold: true }, { label: 'RaspiBlitz', href: 'https://raspiblitz.com/' },
     { label: 'Umbrel', href: 'https://getumbrel.com/' },
   ]},
 ];
 
 const otherToolGroups: LinkGroup[] = [
   { title: 'Prebuilt computers', items: [{ label: 'Framework', href: 'https://frame.work' }, { label: 'System76', href: 'https://system76.com/' }, { label: 'Purism', href: 'https://puri.sm/' }] },
-  { title: 'Desktop OS', items: [{ label: 'Pop!OS', href: 'https://pop.system76.com/' }, { label: 'Tails', href: 'https://tails.boum.org/' }] },
+  { title: 'Desktop OS', items: [{ label: 'Pop!OS', href: 'https://pop.system76.com/' }, { label: 'Tails', href: 'https://tails.boum.org/', gold: true }] },
   { title: 'Browser', items: [{ label: 'Firefox', href: 'https://www.mozilla.org/en-US/firefox/new/' }, { label: 'Mullvad Browser', href: 'https://mullvad.net/en/browser' }, { label: 'Tor', href: 'https://www.torproject.org/download/' }, { label: 'UnGoogled Chromium', href: 'https://github.com/Eloston/ungoogled-chromium' }, { label: 'Chromium', href: 'https://www.chromium.org/' }] },
-  { title: 'Mobile phone', items: [{ label: 'Pixel running GrapheneOS', href: 'https://grapheneos.org/' }] },
-  { title: 'Messages', items: [{ label: 'Signal', href: 'https://signal.org/en/' }, { label: 'Simplex', href: 'https://simplex.chat/' }, { label: 'Threema', href: 'https://threema.ch/en' }] },
-  { title: 'Hosted VPN', items: [{ label: 'Obscura', href: 'https://obscura.net' }, { label: 'Mullvad', href: 'https://mullvad.net/en/' }, { label: 'Proton', href: 'https://proton.me' }, { label: 'iVPN', href: 'https://www.ivpn.net/' }] },
-  { title: 'Email', items: [{ label: 'Proton', href: 'https://proton.me' }, { label: 'Tutanota', href: 'https://tutanota.com/' }] },
-  { title: 'Cross device notes/tasks', items: [{ label: 'StandardNotes', href: 'https://standardnotes.org/' }, { label: 'Proton', href: 'https://proton.me' }] },
-  { title: 'Share files', items: [{ label: 'Wormhole', href: 'https://wormhole.app' }, { label: 'Onion Share', href: 'https://onionshare.org/' }, { label: 'Proton', href: 'https://proton.me' }] },
-  { title: 'Password manager', items: [{ label: 'Proton', href: 'https://proton.me' }, { label: 'BitWarden', href: 'https://bitwarden.com/' }, { label: 'KeePass', href: 'https://keepass.info/' }] },
+  { title: 'Mobile phone', items: [{ label: 'Pixel running GrapheneOS', href: 'https://grapheneos.org/', gold: true }] },
+  { title: 'Messages', items: [{ label: 'Signal', href: 'https://signal.org/en/', gold: true }, { label: 'Simplex', href: 'https://simplex.chat/' }, { label: 'Threema', href: 'https://threema.ch/en' }] },
+  { title: 'Hosted VPN', items: [{ label: 'Obscura', href: 'https://obscura.net', gold: true }, { label: 'Mullvad', href: 'https://mullvad.net/en/' }, { label: 'Proton', href: 'https://proton.me', gold: true }, { label: 'iVPN', href: 'https://www.ivpn.net/' }] },
+  { title: 'Email', items: [{ label: 'Proton', href: 'https://proton.me', gold: true }, { label: 'Tutanota', href: 'https://tutanota.com/' }] },
+  { title: 'Cross device notes/tasks', items: [{ label: 'StandardNotes', href: 'https://standardnotes.org/' }, { label: 'Proton', href: 'https://proton.me', gold: true }] },
+  { title: 'Share files', items: [{ label: 'Wormhole', href: 'https://wormhole.app' }, { label: 'Onion Share', href: 'https://onionshare.org/' }, { label: 'Proton', href: 'https://proton.me', gold: true }] },
+  { title: 'Password manager', items: [{ label: 'Proton', href: 'https://proton.me', gold: true }, { label: 'BitWarden', href: 'https://bitwarden.com/' }, { label: 'KeePass', href: 'https://keepass.info/' }] },
   { title: 'Two factor authentication', items: [{ label: '2FAS', href: 'https://2fas.com' }, { label: 'Aegis', href: 'https://getaegis.app/' }] },
-  { title: 'Nostr', items: [{ label: 'Primal', href: 'https://primal.net' }, { label: 'Nostur', href: 'https://nostur.com' }, { label: 'Amethyst', href: 'https://www.amethyst.social' }] },
+  { title: 'Nostr', items: [{ label: 'Primal', href: 'https://primal.net', gold: true }, { label: 'Nostur', href: 'https://nostur.com' }, { label: 'Amethyst', href: 'https://www.amethyst.social' }] },
 ];
 
 // ---------------------------------------------------------------------------
@@ -187,20 +189,23 @@ function Divider() {
   return <hr className="border-t border-border" />;
 }
 
-function Pill({ href, label, note }: { href: string; label: string; note?: string }) {
+function Pill({ href, label, note, gold }: { href: string; label: string; note?: string; gold?: boolean }) {
   return (
     <a
       href={href}
       {...ext(href)}
-      className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-sm text-foreground transition-colors hover:bg-accent"
+      className={cn(
+        'inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm transition-colors hover:bg-accent',
+        gold ? 'border-amber-500/30 text-amber-400' : 'border-border bg-card text-foreground',
+      )}
     >
       {label}
-      {note ? <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">{note}</span> : null}
+      {note ? <span className={cn('text-[10px] font-medium uppercase tracking-wider', gold ? 'text-amber-500/70' : 'text-muted-foreground')}>{note}</span> : null}
     </a>
   );
 }
 
-function LinkRow({ href, label, description }: { href: string; label: string; description?: string }) {
+function LinkRow({ href, label, description, gold }: { href: string; label: string; description?: string; gold?: boolean }) {
   return (
     <a
       href={href}
@@ -208,7 +213,7 @@ function LinkRow({ href, label, description }: { href: string; label: string; de
       className="group flex items-start justify-between gap-4 rounded-md px-3 py-2.5 -mx-3 transition-colors hover:bg-accent"
     >
       <div className="min-w-0">
-        <span className="text-sm text-foreground">{label}</span>
+        <span className={cn('text-sm', gold ? 'text-amber-400' : 'text-foreground')}>{label}</span>
         {description ? <span className="ml-2 text-sm text-muted-foreground">{description}</span> : null}
       </div>
       {!href.startsWith('#') && !href.startsWith('mailto:') ? (
@@ -227,7 +232,7 @@ function ToolGroup({ group }: { group: LinkGroup }) {
       </div>
       <div className="flex flex-wrap gap-1.5">
         {group.items.map((item) => (
-          <Pill key={`${group.title}-${item.label}`} href={item.href} label={item.label} note={item.note} />
+          <Pill key={`${group.title}-${item.label}`} href={item.href} label={item.label} note={item.note} gold={item.gold} />
         ))}
       </div>
     </div>
@@ -304,9 +309,9 @@ const Index = () => {
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">ODELL</h1>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
               <span className="text-foreground">Managing Partner</span> at{' '}
-              <SmartLink href="https://ten31.xyz/home">Ten31</SmartLink>.{' '}
+              <SmartLink href="https://ten31.xyz/home" className="text-amber-400 decoration-amber-400/30 hover:decoration-amber-400/60">Ten31</SmartLink>.{' '}
               <span className="text-foreground">CoFounder</span>:{' '}
-              <SmartLink href="https://opensats.org/">OpenSats</SmartLink>,{' '}
+              <SmartLink href="https://opensats.org/" className="text-amber-400 decoration-amber-400/30 hover:decoration-amber-400/60">OpenSats</SmartLink>,{' '}
               <SmartLink href="https://bitcoinpark.com/">Bitcoin Park</SmartLink>.{' '}
               <span className="text-foreground">Founding Board</span>:{' '}
               <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>.
@@ -341,8 +346,8 @@ const Index = () => {
                   {...ext(item.href)}
                   className="group flex flex-col gap-1 bg-card p-4 transition-colors hover:bg-accent"
                 >
-                  <span className="text-xs text-muted-foreground">{item.label}</span>
-                  <span className="text-sm font-medium text-foreground">{item.value}</span>
+                  <span className={cn('text-xs', item.gold ? 'text-amber-500/70' : 'text-muted-foreground')}>{item.label}</span>
+                  <span className={cn('text-sm font-medium', item.gold ? 'text-amber-400' : 'text-foreground')}>{item.value}</span>
                 </a>
               ))}
             </div>
@@ -355,7 +360,7 @@ const Index = () => {
             <SectionHeading id="guides" title="Guides" />
             <div className="flex flex-col">
               {guides.map((g) => (
-                <LinkRow key={g.label} href={g.href} label={g.label} description={g.description} />
+                <LinkRow key={g.label} href={g.href} label={g.label} description={g.description} gold={g.gold} />
               ))}
             </div>
           </section>

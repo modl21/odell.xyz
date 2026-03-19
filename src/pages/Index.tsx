@@ -296,8 +296,8 @@ const Index = () => {
       </header>
 
       {/* Content */}
-      <main className="mx-auto max-w-3xl px-6 py-16 md:py-24">
-        <div className="space-y-16 md:space-y-24">
+      <main className="mx-auto max-w-3xl px-6 py-12 md:py-16">
+        <div className="space-y-10 md:space-y-14">
 
           {/* Hero */}
           <section className="space-y-6">

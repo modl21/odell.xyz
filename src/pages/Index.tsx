@@ -107,17 +107,15 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'SeedSigner', href: 'https://seedsigner.com/', note: 'DIY' },
     { label: 'Trezor', href: 'https://trezor.io', note: 'SHITCOINS' },
   ]},
-  { title: 'Android wallets', items: [
-    { label: 'Primal', href: 'https://primal.net/downloads', gold: true }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },
-    { label: 'Phoenix', href: 'https://phoenix.acinq.co/', gold: true }, { label: 'Zeus', href: 'https://zeusln.app/' },
-    { label: 'Cashu.me', href: 'https://cashu.me' }, { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' },
-    { label: 'Cove', href: 'https://covebitcoinwallet.com' }, { label: 'Nunchuk', href: 'https://nunchuk.io/' },
-  ]},
-  { title: 'iOS wallets', items: [
-    { label: 'Primal', href: 'https://primal.net/downloads', gold: true }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },
-    { label: 'Phoenix', href: 'https://phoenix.acinq.co/', gold: true }, { label: 'Zeus', href: 'https://zeusln.app/' },
-    { label: 'Cove', href: 'https://covebitcoinwallet.com' }, { label: 'Cashu.me', href: 'https://cashu.me' },
-    { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' }, { label: 'Nunchuk', href: 'https://nunchuk.io/' },
+  { title: 'Mobile wallets', items: [
+    { label: 'Primal', href: 'https://primal.net/downloads', gold: true },
+    { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },
+    { label: 'Phoenix', href: 'https://phoenix.acinq.co/', gold: true },
+    { label: 'Zeus', href: 'https://zeusln.app/' },
+    { label: 'Cove', href: 'https://covebitcoinwallet.com' },
+    { label: 'Cashu.me', href: 'https://cashu.me' },
+    { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' },
+    { label: 'Nunchuk', href: 'https://nunchuk.io/' },
   ]},
   { title: 'Desktop wallets', items: [
     { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Core', href: 'https://bitcoin.org/en/bitcoin-core/' },

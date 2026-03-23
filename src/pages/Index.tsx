@@ -111,7 +111,7 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Primal', href: 'https://primal.net/downloads', gold: true }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },
     { label: 'Phoenix', href: 'https://phoenix.acinq.co/', gold: true }, { label: 'Zeus', href: 'https://zeusln.app/' },
     { label: 'Cashu.me', href: 'https://cashu.me' }, { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' },
-    { label: 'Nunchuk', href: 'https://nunchuk.io/' },
+    { label: 'Cove', href: 'https://covebitcoinwallet.com' }, { label: 'Nunchuk', href: 'https://nunchuk.io/' },
   ]},
   { title: 'iOS wallets', items: [
     { label: 'Primal', href: 'https://primal.net/downloads', gold: true }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },

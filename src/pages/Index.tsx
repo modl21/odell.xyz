@@ -400,7 +400,7 @@ const Index = () => {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-500"
               >
-                PRIMAL
+                nostr
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>

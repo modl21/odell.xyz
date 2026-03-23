@@ -105,6 +105,7 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'ColdCard', href: 'https://werunbtc.com/coldcard', note: 'BEST', gold: true },
     { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
     { label: 'SeedSigner', href: 'https://seedsigner.com/', note: 'DIY' },
+    { label: 'Trezor', href: 'https://trezor.io', note: 'SHITCOINS' },
   ]},
   { title: 'Android wallets', items: [
     { label: 'Primal', href: 'https://primal.net/downloads', gold: true }, { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com' },

@@ -391,7 +391,7 @@ const Index = () => {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-amber-500 px-5 py-2.5 text-sm font-medium text-black transition-colors hover:bg-amber-400"
               >
-                Podcasts and News
+                podcasts and news
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
               <a

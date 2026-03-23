@@ -384,7 +384,7 @@ const Index = () => {
                 <SmartLink href="https://rhr.tv">Rabbit Hole Recap</SmartLink>.
               </p>
             </div>
-            <div className="flex justify-center pt-2">
+            <div className="flex flex-col items-center gap-3 pt-2">
               <a
                 href="https://citadelwire.com"
                 target="_blank"
@@ -392,6 +392,15 @@ const Index = () => {
                 className="inline-flex items-center gap-2 rounded-md bg-amber-500 px-5 py-2.5 text-sm font-medium text-black transition-colors hover:bg-amber-400"
               >
                 Podcasts and News
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+              <a
+                href="https://primal.net/odell"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-500"
+              >
+                PRIMAL
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>

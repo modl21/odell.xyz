@@ -119,7 +119,6 @@ const bitcoinToolGroups: LinkGroup[] = [
   ]},
   { title: 'Desktop wallets', items: [
     { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Core', href: 'https://bitcoin.org/en/bitcoin-core/' },
-    { label: 'Proton', href: 'https://proton.me' },
   ]},
   { title: 'Self Hosted Multisig', items: [
     { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/' }, { label: 'Caravan', href: 'https://unchained-capital.github.io/caravan/#/' },

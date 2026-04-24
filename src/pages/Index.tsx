@@ -151,7 +151,12 @@ const otherToolGroups: LinkGroup[] = [
   { title: 'Share files', items: [{ label: 'Wormhole', href: 'https://wormhole.app' }, { label: 'Onion Share', href: 'https://onionshare.org/' }, { label: 'Proton', href: 'https://proton.me', gold: true }] },
   { title: 'Password manager', items: [{ label: 'Proton', href: 'https://proton.me', gold: true }, { label: 'BitWarden', href: 'https://bitwarden.com/' }, { label: 'KeePass', href: 'https://keepass.info/' }] },
   { title: 'Two factor authentication', items: [{ label: '2FAS', href: 'https://2fas.com' }, { label: 'Aegis', href: 'https://getaegis.app/' }] },
-  { title: 'Nostr', items: [{ label: 'Primal', href: 'https://primal.net', gold: true }, { label: 'Nostur', href: 'https://nostur.com' }, { label: 'Amethyst', href: 'https://www.amethyst.social' }] },
+  { title: 'Nostr', items: [
+    { label: 'Primal', href: 'https://primal.net', gold: true },
+    { label: 'Wisp', href: 'https://wisp.mobile', note: 'ANDROID' },
+    { label: 'Nostur', href: 'https://nostur.com', note: 'IOS AND MAC' },
+    { label: 'Amethyst', href: 'https://www.amethyst.social', note: 'ANDROID' },
+  ]},
 ];
 
 // ---------------------------------------------------------------------------

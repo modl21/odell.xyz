@@ -121,7 +121,7 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Core', href: 'https://bitcoin.org/en/bitcoin-core/' },
   ]},
   { title: 'Self Hosted Multisig', items: [
-    { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Caravan', href: 'https://unchained-capital.github.io/caravan/#/' },
+    { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true },
     { label: 'Electrum', href: 'https://electrum.org/' }, { label: 'Nunchuk', href: 'https://nunchuk.io/' },
   ]},
   { title: 'Hosted Multisig', items: [

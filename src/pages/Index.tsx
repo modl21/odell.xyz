@@ -115,7 +115,7 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Cove', href: 'https://covebitcoinwallet.com', note: 'HARDWARE WALLET SUPPORT' },
     { label: 'Cashu.me', href: 'https://cashu.me' },
     { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' },
-    { label: 'Nunchuk', href: 'https://nunchuk.io/' },
+    { label: 'Nunchuk', href: 'https://nunchuk.io/', note: 'HARDWARE WALLET SUPPORT' },
   ]},
   { title: 'Desktop wallets', items: [
     { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Core', href: 'https://bitcoin.org/en/bitcoin-core/' },

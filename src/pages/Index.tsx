@@ -125,7 +125,9 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Electrum', href: 'https://electrum.org/' }, { label: 'Nunchuk', href: 'https://nunchuk.io/' },
   ]},
   { title: 'Hosted Multisig', items: [
-    { label: 'Unchained Capital', href: 'https://unchained-capital.com/' }, { label: 'Casa', href: 'https://keys.casa/' },
+    { label: 'AnchorWatch', href: 'https://www.anchorwatch.com', gold: true },
+    { label: 'Unchained Capital', href: 'https://unchained-capital.com/' },
+    { label: 'Casa', href: 'https://keys.casa/' },
   ]},
   { title: 'Block explorers', items: [
     { label: 'Mempool.Space', href: 'https://mempool.space/', gold: true }, { label: 'Blockstream', href: 'https://blockstream.info/' },

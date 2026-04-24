@@ -121,14 +121,14 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Core', href: 'https://bitcoin.org/en/bitcoin-core/' },
   ]},
   { title: 'Self Hosted Multisig', items: [
-    { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/' }, { label: 'Caravan', href: 'https://unchained-capital.github.io/caravan/#/' },
+    { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Caravan', href: 'https://unchained-capital.github.io/caravan/#/' },
     { label: 'Electrum', href: 'https://electrum.org/' }, { label: 'Nunchuk', href: 'https://nunchuk.io/' },
   ]},
   { title: 'Hosted Multisig', items: [
     { label: 'Unchained Capital', href: 'https://unchained-capital.com/' }, { label: 'Casa', href: 'https://keys.casa/' },
   ]},
   { title: 'Block explorers', items: [
-    { label: 'Mempool.Space', href: 'https://mempool.space/' }, { label: 'Blockstream', href: 'https://blockstream.info/' },
+    { label: 'Mempool.Space', href: 'https://mempool.space/', gold: true }, { label: 'Blockstream', href: 'https://blockstream.info/' },
   ]},
   { title: 'Mempool', items: [{ label: 'Status', href: 'https://mempool.space/' }] },
   { title: 'Transaction', items: [{ label: 'Monitor', href: 'https://mempool.observer/monitor/' }] },

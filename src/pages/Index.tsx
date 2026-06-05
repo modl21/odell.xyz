@@ -57,7 +57,6 @@ const contactItems: ContactItem[] = [
   { label: 'Signal', value: 'ODELL.42', href: 'https://signal.me/#eu/HRcP2L9gdya44jj6lvfVtPNsyxRdiTsK2GIuAEFuciFj9ePBDHtKAbtGpyEffTsU', gold: true },
   { label: 'Nostr', value: 'odell@primal.net', href: 'https://primal.net/odell', gold: true },
   { label: 'SimpleX', value: 'ODELL', href: 'https://simplex.chat/contact#/?v=2-4&smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2FYsjR0DHt4mb8Ojcm7pXGonhZE1Sbu_mB%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAfcIfVMSAWy615opqvRBq6MovGgaZ80uPYYfFrKDkIQM%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion' },
-  { label: 'Keet', value: 'ODELL42', href: 'https://keet.io' },
   { label: 'GitHub', value: '@modl21', href: 'https://github.com/modl21' },
   { label: 'X', value: '@ODELLXYZ', href: 'https://x.com/ODELLXYZ' },
   { label: 'Email', value: 'odell@ten31.xyz', href: 'mailto:odell@ten31.xyz', gold: true },

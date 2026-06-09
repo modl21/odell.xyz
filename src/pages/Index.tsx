@@ -413,7 +413,7 @@ const Index = () => {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="X"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-border bg-card text-foreground transition-colors hover:bg-accent"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-amber-500/60 bg-card text-foreground ring-2 ring-amber-500/35 ring-offset-2 ring-offset-background transition-colors hover:border-amber-400 hover:bg-accent hover:ring-amber-400/50"
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.967 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />

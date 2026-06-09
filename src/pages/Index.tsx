@@ -435,16 +435,16 @@ const Index = () => {
           {/* Contact */}
           <section className="space-y-6">
             <SectionHeading id="contact" title="Contact" />
-            <div className="grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-3 gap-px overflow-hidden rounded-lg border border-border bg-border">
               {contactItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
                   {...ext(item.href)}
-                  className="group flex flex-col gap-1 bg-card p-4 transition-colors hover:bg-accent"
+                  className="group flex min-w-0 flex-col items-center gap-1 bg-card px-2 py-3 text-center transition-colors hover:bg-accent sm:p-4"
                 >
                   <span className={cn('text-xs', item.gold ? 'text-amber-500/70' : 'text-muted-foreground')}>{item.label}</span>
-                  <span className={cn('text-sm font-medium', item.gold ? 'text-amber-400' : 'text-foreground')}>{item.value}</span>
+                  <span className={cn('w-full truncate text-xs font-medium sm:text-sm', item.gold ? 'text-amber-400' : 'text-foreground')}>{item.value}</span>
                 </a>
               ))}
             </div>

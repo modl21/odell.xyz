@@ -106,7 +106,7 @@ const bitcoinToolGroups: LinkGroup[] = [
   ]},
   { title: 'Mobile wallets', items: [
     { label: 'Primal', href: 'https://primal.net/downloads', gold: true },
-    { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com', note: 'HARDWARE WALLET SUPPORT' },
+    { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com', note: 'HARDWARE WALLET SUPPORT', gold: true },
     { label: 'Phoenix', href: 'https://phoenix.acinq.co/', gold: true },
     { label: 'Zeus', href: 'https://zeusln.app/' },
     { label: 'Cove', href: 'https://covebitcoinwallet.com', note: 'HARDWARE WALLET SUPPORT' },

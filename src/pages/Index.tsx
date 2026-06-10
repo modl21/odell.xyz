@@ -110,7 +110,7 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Phoenix', href: 'https://phoenix.acinq.co/', note: 'CLOUD BACKUPS', gold: true },
     { label: 'Zeus', href: 'https://zeusln.app/' },
     { label: 'Cove', href: 'https://covebitcoinwallet.com', note: 'HARDWARE WALLET SUPPORT' },
-    { label: 'Cashu.me', href: 'https://cashu.me' },
+    { label: 'Cashu.me', href: 'https://cashu.me', note: 'WEB APP' },
     { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' },
     { label: 'Nunchuk', href: 'https://nunchuk.io/', note: 'HARDWARE WALLET SUPPORT' },
   ]},

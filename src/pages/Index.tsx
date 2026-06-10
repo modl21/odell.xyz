@@ -378,7 +378,8 @@ const Index = () => {
               </p>
               <p>
                 <span className="text-foreground">Founding Board</span>:{' '}
-                <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>.
+                <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>,{' '}
+                <SmartLink href="https://simplexnetwork.org/consortium.html">SimpleX Network Foundation</SmartLink>.
               </p>
               <p>
                 <span className="text-foreground">Host</span>:{' '}

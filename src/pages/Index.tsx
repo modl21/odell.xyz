@@ -134,7 +134,7 @@ const bitcoinToolGroups: LinkGroup[] = [
   { title: 'Transaction', items: [{ label: 'Monitor', href: 'https://mempool.observer/monitor/' }] },
   { title: 'Prebuilt dedicated node', items: [{ label: 'Start9', href: 'https://start9.com/', gold: true }] },
   { title: 'Build your own dedicated node', items: [
-    { label: 'Start9', href: 'https://start9.com/', gold: true }, { label: 'RaspiBlitz', href: 'https://raspiblitz.com/' },
+    { label: 'Start9', href: 'https://start9.com/', gold: true },
     { label: 'Umbrel', href: 'https://getumbrel.com/' },
   ]},
 ];

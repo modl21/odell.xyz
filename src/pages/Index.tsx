@@ -111,6 +111,7 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Zeus', href: 'https://zeusln.app/' },
     { label: 'Cove', href: 'https://covebitcoinwallet.com', note: 'HARDWARE WALLET SUPPORT' },
     { label: 'Cashu.me', href: 'https://cashu.me', note: 'WEB APP' },
+    { label: 'Cake Wallet', href: 'https://cakewallet.com' },
     { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' },
     { label: 'Nunchuk', href: 'https://nunchuk.io/', note: 'HARDWARE WALLET SUPPORT' },
   ]},

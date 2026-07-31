@@ -97,10 +97,10 @@ const otherBitcoinResources: LinkItem[] = [
 
 const bitcoinToolGroups: LinkGroup[] = [
   { title: 'Offline Hardware wallets', description: 'best for savings', items: [
-    { label: 'ColdCard', href: 'https://werunbtc.com/coldcard', note: 'BEST', gold: true },
+    { label: 'ColdCard', href: 'https://werunbtc.com/coldcard' },
     { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
     { label: 'SeedSigner', href: 'https://seedsigner.com/', note: 'DIY' },
-    { label: 'Trezor', href: 'https://trezor.io', note: 'SHITCOINS' },
+    { label: 'Trezor', href: 'https://trezor.io' },
   ]},
   { title: 'Mobile wallets', items: [
     { label: 'Primal', href: 'https://primal.net/downloads', note: 'EASY', gold: true },

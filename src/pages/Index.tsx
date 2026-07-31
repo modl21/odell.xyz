@@ -61,7 +61,6 @@ const contactItems: ContactItem[] = [
 
 const guides: LinkItem[] = [
   { label: 'phoenix', href: 'https://werunbtc.com/phoenix', description: 'Easily spend and receive bitcoin on your phone.', gold: true },
-  { label: 'coldcard', href: 'https://werunbtc.com/coldcard', description: 'Long term bitcoin savings kept offline.', gold: true },
   { label: 'bitcoin core', href: 'https://werunbtc.com/bitcoincore', description: 'Run and use your own bitcoin node.' },
   { label: 'bitcoin transaction fees', href: 'https://werunbtc.com/utxos', description: 'UTXO management.' },
   { label: 'opendime', href: 'https://werunbtc.com/opendime', description: 'A fun way to gift bitcoin.' },

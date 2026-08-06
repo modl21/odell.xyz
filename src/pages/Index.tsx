@@ -38,7 +38,6 @@ interface ContactItem {
 
 const navLinks = [
   { id: 'contact', label: 'Contact' },
-  { id: 'guides', label: 'Guides' },
   { id: 'resources', label: 'Resources' },
   { id: 'tools', label: 'Tools' },
   { id: 'donate', label: 'Donate' },
@@ -57,14 +56,6 @@ const contactItems: ContactItem[] = [
   { label: 'Signal', value: 'ODELL.42', href: 'https://signal.me/#eu/HRcP2L9gdya44jj6lvfVtPNsyxRdiTsK2GIuAEFuciFj9ePBDHtKAbtGpyEffTsU', gold: true },
   { label: 'SimpleX', value: 'ODELL', href: 'https://simplex.chat/contact#/?v=2-4&smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2FYsjR0DHt4mb8Ojcm7pXGonhZE1Sbu_mB%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAfcIfVMSAWy615opqvRBq6MovGgaZ80uPYYfFrKDkIQM%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion' },
   { label: 'Email', value: 'odell@ten31.xyz', href: 'mailto:odell@ten31.xyz', gold: true },
-];
-
-const guides: LinkItem[] = [
-  { label: 'phoenix', href: 'https://werunbtc.com/phoenix', description: 'Easily spend and receive bitcoin on your phone.', gold: true },
-  { label: 'bitcoin core', href: 'https://werunbtc.com/bitcoincore', description: 'Run and use your own bitcoin node.' },
-  { label: 'bitcoin transaction fees', href: 'https://werunbtc.com/utxos', description: 'UTXO management.' },
-  { label: 'opendime', href: 'https://werunbtc.com/opendime', description: 'A fun way to gift bitcoin.' },
-  { label: 'bitcoin tools and resources', href: '#tools', description: 'A list of my favorites.' },
 ];
 
 const otherBitcoinResources: LinkItem[] = [
@@ -102,14 +93,14 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Trezor', href: 'https://trezor.io' },
   ]},
   { title: 'Mobile wallets', items: [
-    { label: 'Primal', href: 'https://primal.net/downloads', note: 'EASY', gold: true },
-    { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com', note: 'HARDWARE WALLET SUPPORT', gold: true },
-    { label: 'Phoenix', href: 'https://phoenix.acinq.co/', note: 'CLOUD BACKUPS', gold: true },
-    { label: 'Zeus', href: 'https://zeusln.app/' },
+    { label: 'Primal', href: 'https://primal.net/downloads', note: 'EASY' },
+    { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com', note: 'HARDWARE WALLET SUPPORT' },
+    { label: 'Phoenix', href: 'https://phoenix.acinq.co/', note: 'CLOUD BACKUPS' },
+    { label: 'Zeus', href: 'https://zeusln.app/', note: 'FULL LIGHTNING SUPPORT' },
     { label: 'Cove', href: 'https://covebitcoinwallet.com', note: 'HARDWARE WALLET SUPPORT' },
     { label: 'Cashu.me', href: 'https://cashu.me', note: 'WEB APP' },
-    { label: 'Cake Wallet', href: 'https://cakewallet.com', note: 'SHITCOINS' },
-    { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/' },
+    { label: 'Cake Wallet', href: 'https://cakewallet.com', note: 'HARDWARE WALLET SUPPORT' },
+    { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/', note: 'FULL LIGHTNING SUPPORT' },
     { label: 'Nunchuk', href: 'https://nunchuk.io/', note: 'HARDWARE WALLET SUPPORT' },
   ]},
   { title: 'Desktop wallets', items: [
@@ -445,18 +436,6 @@ const Index = () => {
                   <span className={cn('text-xs', item.gold ? 'text-amber-500/70' : 'text-muted-foreground')}>{item.label}</span>
                   <span className={cn('w-full truncate text-xs font-medium sm:text-sm', item.gold ? 'text-amber-400' : 'text-foreground')}>{item.value}</span>
                 </a>
-              ))}
-            </div>
-          </section>
-
-          <Divider />
-
-          {/* Guides */}
-          <section className="space-y-6">
-            <SectionHeading id="guides" title="Guides" />
-            <div className="flex flex-col">
-              {guides.map((g) => (
-                <LinkRow key={g.label} href={g.href} label={g.label} description={g.description} gold={g.gold} />
               ))}
             </div>
           </section>

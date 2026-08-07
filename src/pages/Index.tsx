@@ -506,6 +506,9 @@ const Index = () => {
           {/* Sponsor Disclosure */}
           <section className="space-y-4">
             <SectionHeading id="sponsors" title="Sponsor Disclosure" />
+            <p className="text-sm font-bold leading-relaxed text-foreground">
+              Both of my podcasts are paused indefinitely as of Aug 3 2026.
+            </p>
             <p className="text-sm leading-relaxed text-muted-foreground">
               <SmartLink href="https://rhr.tv">Rabbit Hole Recap</SmartLink> is currently sponsored by Strike, Coinkite, Stakwork, and Salt of the Earth. Potential sponsors are screened heavily and they understand our opinions are not for sale. We hold our sponsors to a high standard and are often critical of them. I hope to move to a listener funded ad-free model as soon as possible. Search <span className="text-foreground">Rabbit Hole Recap</span> in your favorite podcast app and click subscribe!
             </p>

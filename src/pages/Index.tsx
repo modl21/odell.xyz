@@ -72,7 +72,6 @@ const otherBitcoinResources: LinkItem[] = [
   { label: 'Bitcoin Wiki', href: 'https://en.bitcoin.it/wiki/Main_Page' },
   { label: 'Bitcoin ACKs', href: 'https://bitcoinacks.com/', description: 'Bitcoin Core Activity Tracker.' },
   { label: 'Getting Started with Lightning Network', href: 'https://ln.guide/' },
-  { label: 'Keep It Simple Bitcoin Guides', href: 'https://www.keepitsimplebitcoin.com/guides/' },
   { label: 'Software Verification Guide', href: 'https://www.bitcoinqna.com/post/verifying-software-101' },
   { label: 'General GPG Guide', href: 'https://medium.com/@acparas/gpg-quickstart-guide-d01f005ca99' },
   { label: 'Spanish Language Bitcoin Guides', href: 'https://estudiobitcoin.com/' },

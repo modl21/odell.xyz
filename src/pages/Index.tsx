@@ -92,9 +92,8 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Trezor', href: 'https://trezor.io' },
   ]},
   { title: 'Mobile wallets', items: [
-    { label: 'Primal', href: 'https://primal.net/downloads', note: 'EASY' },
-    { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com', note: 'HARDWARE WALLET SUPPORT' },
     { label: 'Phoenix', href: 'https://phoenix.acinq.co/', note: 'CLOUD BACKUPS' },
+    { label: 'Bull Wallet', href: 'https://wallet.bullbitcoin.com', note: 'HARDWARE WALLET SUPPORT' },
     { label: 'Zeus', href: 'https://zeusln.app/', note: 'FULL LIGHTNING SUPPORT' },
     { label: 'Cove', href: 'https://covebitcoinwallet.com', note: 'HARDWARE WALLET SUPPORT' },
     { label: 'Cashu.me', href: 'https://cashu.me', note: 'WEB APP' },

@@ -87,7 +87,7 @@ const otherBitcoinResources: LinkItem[] = [
 ];
 
 const bitcoinToolGroups: LinkGroup[] = [
-  { title: 'Offline Hardware wallets', description: 'best for savings', items: [
+  { title: 'Offline Hardware wallets', items: [
     { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
     { label: 'SeedSigner', href: 'https://seedsigner.com/', note: 'DIY' },
     { label: 'Trezor', href: 'https://trezor.io' },
@@ -383,16 +383,7 @@ const Index = () => {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-amber-500 px-5 py-2.5 text-sm font-medium text-black transition-colors hover:bg-amber-400"
               >
-                podcasts and news
-                <ArrowUpRight className="h-3.5 w-3.5" />
-              </a>
-              <a
-                href="https://primal.net/odell"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-500"
-              >
-                nostr
+                news
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
               <a
@@ -404,17 +395,6 @@ const Index = () => {
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.967 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
-                </svg>
-              </a>
-              <a
-                href="https://github.com/modl21"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-blue-500/60 bg-card text-foreground ring-2 ring-blue-500/35 ring-offset-2 ring-offset-background transition-colors hover:border-blue-400 hover:bg-accent hover:ring-blue-400/50"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.59 2 12.253c0 4.53 2.865 8.371 6.839 9.727.5.094.683-.222.683-.494 0-.244-.009-.89-.014-1.747-2.782.62-3.369-1.375-3.369-1.375-.455-1.185-1.11-1.5-1.11-1.5-.908-.637.069-.624.069-.624 1.004.072 1.532 1.057 1.532 1.057.892 1.566 2.341 1.114 2.91.852.091-.663.35-1.114.635-1.37-2.22-.26-4.555-1.139-4.555-5.068 0-1.12.39-2.035 1.03-2.752-.103-.26-.446-1.304.098-2.717 0 0 .84-.276 2.75 1.052A9.434 9.434 0 0 1 12 6.95a9.44 9.44 0 0 1 2.504.345c1.909-1.328 2.748-1.052 2.748-1.052.546 1.413.202 2.457.1 2.717.64.717 1.028 1.632 1.028 2.752 0 3.939-2.338 4.805-4.566 5.06.359.318.679.944.679 1.902 0 1.373-.013 2.48-.013 2.817 0 .274.18.593.688.493C19.138 20.62 22 16.782 22 12.253 22 6.59 17.523 2 12 2Z" />
                 </svg>
               </a>
             </div>

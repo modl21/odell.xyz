@@ -89,7 +89,7 @@ const bitcoinToolGroups: LinkGroup[] = [
   { title: 'Offline Hardware wallets', items: [
     { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
     { label: 'SeedSigner', href: 'https://seedsigner.com/', note: 'DIY' },
-    { label: 'Trezor', href: 'https://trezor.io' },
+    { label: 'Trezor', href: 'https://trezor.io', note: 'ALTCOIN SUPPORT' },
   ]},
   { title: 'Mobile wallets', items: [
     { label: 'Phoenix', href: 'https://phoenix.acinq.co/', note: 'CLOUD BACKUPS' },

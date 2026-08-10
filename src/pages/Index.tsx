@@ -368,11 +368,6 @@ const Index = () => {
                 <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>,{' '}
                 <SmartLink href="https://simplexnetwork.org/consortium.html">SimpleX Network Foundation</SmartLink>.
               </p>
-              <p>
-                <span className="text-foreground">Host</span>:{' '}
-                <SmartLink href="https://citadeldispatch.com">Citadel Dispatch</SmartLink>,{' '}
-                <SmartLink href="https://rhr.tv">Rabbit Hole Recap</SmartLink>.
-              </p>
             </div>
             <div className="flex flex-col items-center gap-3 pt-2">
               <a
@@ -502,6 +497,16 @@ const Index = () => {
 
           <Divider />
 
+          {/* Non Profit Disclosure */}
+          <section className="space-y-4">
+            <SectionHeading id="non-profit" title="Non Profit Disclosure" />
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              I am a member of three non profit boards. OpenSats, Bitcoin Policy Institute, and the SimpleX Network Foundation. It is volunteer work. I do not get paid.
+            </p>
+          </section>
+
+          <Divider />
+
           {/* Sponsor Disclosure */}
           <section className="space-y-4">
             <SectionHeading id="sponsors" title="Sponsor Disclosure" />
@@ -509,10 +514,10 @@ const Index = () => {
               Both of my podcasts are paused indefinitely as of Aug 3 2026.
             </p>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              <SmartLink href="https://rhr.tv">Rabbit Hole Recap</SmartLink> is currently sponsored by Strike, Coinkite, Stakwork, and Salt of the Earth. Potential sponsors are screened heavily and they understand our opinions are not for sale. We hold our sponsors to a high standard and are often critical of them. I hope to move to a listener funded ad-free model as soon as possible. Search <span className="text-foreground">Rabbit Hole Recap</span> in your favorite podcast app and click subscribe!
+              Rabbit Hole Recap was sponsored by Strike, Coinkite, Stakwork, and Salt of the Earth.
             </p>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              <SmartLink href="https://citadeldispatch.com/">Citadel Dispatch</SmartLink> is a free and open project that is 100% audience funded. It has never and will never have ads or sponsors. All sats <SmartLink href="https://pay.zaprite.com/pl_RYA8Fjr7xU">donated</SmartLink> are held in cold storage to help fund the project long term. Search <span className="text-foreground">Citadel Dispatch</span> in your favorite podcast app and click subscribe!
+              Citadel Dispatch is a free and open project that is 100% audience funded. It has never and will never have ads or sponsors.
             </p>
           </section>
 
@@ -522,7 +527,7 @@ const Index = () => {
           <section className="space-y-4">
             <SectionHeading id="investment" title="Investment Disclosure" />
             <p className="text-sm leading-relaxed text-muted-foreground">
-              I am a managing partner at the largest bitcoin technology investor in the world - Ten31. Our team has deployed over $200M to support bitcoin companies and projects over the last two years. There is no promise of paid promotion or endorsement in those agreements. You can find a full list of <SmartLink href="https://ten31.xyz/home">our portfolio on our website</SmartLink>.
+              I am a managing partner at Ten31. You can find a full list of <SmartLink href="https://ten31.xyz">our portfolio on our website</SmartLink>.
             </p>
           </section>
 

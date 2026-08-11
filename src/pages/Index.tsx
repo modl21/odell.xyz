@@ -1,14 +1,6 @@
-import { useState, useEffect, useCallback, type ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { useSeoMeta } from '@unhead/react';
-import { ArrowUpRight, Menu } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet';
+import { ArrowUpRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 // ---------------------------------------------------------------------------
@@ -35,22 +27,6 @@ interface ContactItem {
   href: string;
   gold?: boolean;
 }
-
-const navLinks = [
-  { id: 'contact', label: 'Contact' },
-  { id: 'resources', label: 'Resources' },
-  { id: 'tools', label: 'Tools' },
-  { id: 'donate', label: 'Donate' },
-];
-
-const allSections = [
-  ...navLinks,
-  { id: 'help', label: 'Help' },
-  { id: 'liability', label: 'Liability' },
-  { id: 'sponsors', label: 'Sponsors' },
-  { id: 'investment', label: 'Investment' },
-  { id: 'canary', label: 'Canary' },
-];
 
 const contactItems: ContactItem[] = [
   { label: 'Signal', value: 'ODELL.42', href: 'https://signal.me/#eu/HRcP2L9gdya44jj6lvfVtPNsyxRdiTsK2GIuAEFuciFj9ePBDHtKAbtGpyEffTsU', gold: true },
@@ -243,60 +219,6 @@ function DonateQR() {
 }
 
 // ---------------------------------------------------------------------------
-// Price ticker
-// ---------------------------------------------------------------------------
-
-function usePrices() {
-  const [btc, setBtc] = useState<number | null>(null);
-  const [xaut, setXaut] = useState<number | null>(null);
-
-  const fetchPrices = useCallback(async () => {
-    try {
-      const res = await fetch(
-        'https://proxy.shakespeare.diy/?url=' +
-          encodeURIComponent('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,tether-gold&vs_currencies=usd'),
-      );
-      const data = await res.json();
-      if (data.bitcoin?.usd) setBtc(data.bitcoin.usd);
-      if (data['tether-gold']?.usd) setXaut(data['tether-gold'].usd);
-    } catch {
-      // silently fail — prices are non-critical
-    }
-  }, []);
-
-  useEffect(() => {
-    fetchPrices();
-    const id = setInterval(fetchPrices, 60_000);
-    return () => clearInterval(id);
-  }, [fetchPrices]);
-
-  return { btc, xaut };
-}
-
-function fmt(n: number | null) {
-  if (n === null) return '—';
-  return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
-}
-
-function PriceTicker() {
-  const { btc, xaut } = usePrices();
-
-  return (
-    <div className="flex items-center gap-3 text-xs tabular-nums text-muted-foreground">
-      <span>
-        <span className="text-amber-400">BTC</span>{' '}
-        <span className="text-foreground">{fmt(btc)}</span>
-      </span>
-      <span className="text-border">|</span>
-      <span>
-        <span className="text-amber-400">XAUT</span>{' '}
-        <span className="text-foreground">{fmt(xaut)}</span>
-      </span>
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
 // Page
 // ---------------------------------------------------------------------------
 
@@ -311,38 +233,7 @@ const Index = () => {
       {/* Header */}
       <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur-lg">
         <div className="mx-auto flex h-14 max-w-3xl items-center justify-between px-6">
-          <div className="flex items-center gap-4">
-            <a href="#" className="text-lg font-semibold tracking-tight">ODELL</a>
-            <PriceTicker />
-          </div>
-
-          <nav className="hidden items-center gap-5 md:flex">
-            {navLinks.map((l) => (
-              <a key={l.id} href={`#${l.id}`} className="text-[13px] text-muted-foreground hover:text-foreground">
-                {l.label}
-              </a>
-            ))}
-          </nav>
-
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-8 w-8 md:hidden" aria-label="Menu">
-                <Menu className="h-4 w-4" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-64 border-border bg-background">
-              <SheetTitle className="sr-only">Navigation</SheetTitle>
-              <nav className="mt-8 flex flex-col gap-1">
-                {allSections.map((l) => (
-                  <SheetClose asChild key={l.id}>
-                    <a href={`#${l.id}`} className="rounded-md px-3 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground">
-                      {l.label}
-                    </a>
-                  </SheetClose>
-                ))}
-              </nav>
-            </SheetContent>
-          </Sheet>
+          <a href="#" className="text-lg font-semibold tracking-tight">ODELL</a>
         </div>
       </header>
 

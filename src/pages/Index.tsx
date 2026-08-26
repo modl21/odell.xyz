@@ -62,10 +62,12 @@ const otherBitcoinResources: LinkItem[] = [
 ];
 
 const bitcoinToolGroups: LinkGroup[] = [
-  { title: 'Offline Hardware wallets', items: [
-    { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
+  { title: 'Offline Hardware signers', items: [
     { label: 'SeedSigner', href: 'https://seedsigner.com/', note: 'DIY' },
     { label: 'Trezor', href: 'https://trezor.io', note: 'ALTCOIN SUPPORT' },
+    { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
+    { label: 'Cupcake', href: 'https://cupcakewallet.com', note: 'USES AN OLD PHONE' },
+    { label: 'Passport', href: 'https://foundation.xyz', note: 'MULTIPURPOSE' },
   ]},
   { title: 'Mobile wallets', items: [
     { label: 'Phoenix', href: 'https://phoenix.acinq.co/', note: 'CLOUD BACKUPS' },

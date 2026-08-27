@@ -64,10 +64,10 @@ const otherBitcoinResources: LinkItem[] = [
 const bitcoinToolGroups: LinkGroup[] = [
   { title: 'Offline Hardware signers', items: [
     { label: 'SeedSigner', href: 'https://seedsigner.com/', note: 'DIY' },
-    { label: 'Trezor', href: 'https://trezor.io', note: 'ALTCOIN SUPPORT' },
+    { label: 'Trezor', href: 'https://trezor.io', note: 'VERSATILE' },
     { label: 'Frostsnap', href: 'https://frostsnap.com', note: 'MULTISIG' },
     { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
-    { label: 'Cupcake', href: 'https://cupcakewallet.com', note: 'USES AN OLD PHONE' },
+    { label: 'Cupcake', href: 'https://cupcakewallet.com', note: 'CONVERT A PHONE' },
     { label: 'Passport', href: 'https://foundation.xyz', note: 'MULTIPURPOSE' },
   ]},
   { title: 'Mobile wallets', items: [

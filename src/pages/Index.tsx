@@ -108,7 +108,7 @@ const otherToolGroups: LinkGroup[] = [
   { title: 'Prebuilt computers', items: [{ label: 'Framework', href: 'https://frame.work' }, { label: 'System76', href: 'https://system76.com/' }, { label: 'Purism', href: 'https://puri.sm/' }] },
   { title: 'Desktop OS', items: [{ label: 'Pop!OS', href: 'https://pop.system76.com/' }, { label: 'Tails', href: 'https://tails.boum.org/', gold: true }] },
   { title: 'Browser', items: [{ label: 'Firefox', href: 'https://www.mozilla.org/en-US/firefox/new/' }, { label: 'Mullvad Browser', href: 'https://mullvad.net/en/browser' }, { label: 'Tor', href: 'https://www.torproject.org/download/' }, { label: 'UnGoogled Chromium', href: 'https://github.com/Eloston/ungoogled-chromium' }, { label: 'Chromium', href: 'https://www.chromium.org/' }] },
-  { title: 'Mobile phone', items: [{ label: 'Pixel running GrapheneOS', href: 'https://grapheneos.org/', gold: true }] },
+  { title: 'Mobile phone', items: [{ label: 'GrapheneOS', href: 'https://grapheneos.org/', gold: true }] },
   { title: 'Messages', items: [{ label: 'Signal', href: 'https://signal.org/en/', gold: true }, { label: 'Simplex', href: 'https://simplex.chat/' }, { label: 'Threema', href: 'https://threema.ch/en' }] },
   { title: 'Hosted VPN', items: [{ label: 'Obscura', href: 'https://obscura.com', gold: true }, { label: 'Mullvad', href: 'https://mullvad.net/en/' }, { label: 'Proton', href: 'https://proton.me' }] },
   { title: 'Email', items: [{ label: 'Proton', href: 'https://proton.me', gold: true }, { label: 'Tutanota', href: 'https://tutanota.com/' }] },

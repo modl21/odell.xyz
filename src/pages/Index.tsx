@@ -110,7 +110,7 @@ const otherToolGroups: LinkGroup[] = [
   { title: 'Browser', items: [{ label: 'Firefox', href: 'https://www.mozilla.org/en-US/firefox/new/' }, { label: 'Mullvad Browser', href: 'https://mullvad.net/en/browser' }, { label: 'Tor', href: 'https://www.torproject.org/download/' }, { label: 'UnGoogled Chromium', href: 'https://github.com/Eloston/ungoogled-chromium' }, { label: 'Chromium', href: 'https://www.chromium.org/' }] },
   { title: 'Mobile phone', items: [{ label: 'Pixel running GrapheneOS', href: 'https://grapheneos.org/', gold: true }] },
   { title: 'Messages', items: [{ label: 'Signal', href: 'https://signal.org/en/', gold: true }, { label: 'Simplex', href: 'https://simplex.chat/' }, { label: 'Threema', href: 'https://threema.ch/en' }] },
-  { title: 'Hosted VPN', items: [{ label: 'Obscura', href: 'https://obscura.net', gold: true }, { label: 'Mullvad', href: 'https://mullvad.net/en/' }, { label: 'Proton', href: 'https://proton.me' }] },
+  { title: 'Hosted VPN', items: [{ label: 'Obscura', href: 'https://obscura.com', gold: true }, { label: 'Mullvad', href: 'https://mullvad.net/en/' }, { label: 'Proton', href: 'https://proton.me' }] },
   { title: 'Email', items: [{ label: 'Proton', href: 'https://proton.me', gold: true }, { label: 'Tutanota', href: 'https://tutanota.com/' }] },
   { title: 'Cross device notes/tasks', items: [{ label: 'StandardNotes', href: 'https://standardnotes.org/' }, { label: 'Proton', href: 'https://proton.me', gold: true }] },
   { title: 'Share files', items: [{ label: 'Wormhole', href: 'https://wormhole.app' }, { label: 'Onion Share', href: 'https://onionshare.org/' }, { label: 'Proton', href: 'https://proton.me', gold: true }] },

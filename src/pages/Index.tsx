@@ -79,6 +79,7 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Cake Wallet', href: 'https://cakewallet.com', note: 'HARDWARE WALLET SUPPORT' },
     { label: 'Blixt Wallet', href: 'https://blixtwallet.github.io/', note: 'FULL LIGHTNING SUPPORT' },
     { label: 'Nunchuk', href: 'https://nunchuk.io/', note: 'HARDWARE WALLET SUPPORT' },
+    { label: 'Lexe', href: 'https://www.lexe.app', note: 'LIGHTNING ADDRESS SUPPORT' },
   ]},
   { title: 'Desktop wallets', items: [
     { label: 'Sparrow Wallet', href: 'https://www.sparrowwallet.com/', gold: true }, { label: 'Core', href: 'https://bitcoin.org/en/bitcoin-core/' },

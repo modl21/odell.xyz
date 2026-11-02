@@ -68,7 +68,6 @@ const bitcoinToolGroups: LinkGroup[] = [
     { label: 'Frostsnap', href: 'https://frostsnap.com', note: 'MULTISIG' },
     { label: 'Bitkey', href: 'https://bitkey.world', note: 'EASY' },
     { label: 'Cupcake', href: 'https://cupcakewallet.com', note: 'CONVERT A PHONE' },
-    { label: 'Passport', href: 'https://foundation.xyz', note: 'MULTIPURPOSE' },
   ]},
   { title: 'Mobile wallets', items: [
     { label: 'Phoenix', href: 'https://phoenix.acinq.co/', note: 'CLOUD BACKUPS' },

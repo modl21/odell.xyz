@@ -31,7 +31,6 @@ interface ContactItem {
 const contactItems: ContactItem[] = [
   { label: 'Signal', value: 'ODELL.42', href: 'https://signal.me/#eu/HRcP2L9gdya44jj6lvfVtPNsyxRdiTsK2GIuAEFuciFj9ePBDHtKAbtGpyEffTsU', gold: true },
   { label: 'SimpleX', value: 'ODELL', href: 'https://simplex.chat/contact#/?v=2-4&smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2FYsjR0DHt4mb8Ojcm7pXGonhZE1Sbu_mB%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAfcIfVMSAWy615opqvRBq6MovGgaZ80uPYYfFrKDkIQM%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion' },
-  { label: 'Email', value: 'odell@ten31.xyz', href: 'mailto:odell@ten31.xyz', gold: true },
 ];
 
 const otherBitcoinResources: LinkItem[] = [
@@ -292,13 +291,13 @@ const Index = () => {
           {/* Contact */}
           <section className="space-y-6">
             <SectionHeading id="contact" title="Contact" />
-            <div className="grid grid-cols-3 gap-px overflow-hidden rounded-lg border border-border bg-border">
+            <div className="flex gap-px overflow-hidden rounded-lg border border-border bg-border">
               {contactItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
                   {...ext(item.href)}
-                  className="group flex min-w-0 flex-col items-center gap-1 bg-card px-2 py-3 text-center transition-colors hover:bg-accent sm:p-4"
+                  className="group flex min-w-0 flex-1 flex-col items-center gap-1 bg-card px-2 py-3 text-center transition-colors hover:bg-accent sm:p-4"
                 >
                   <span className={cn('text-xs', item.gold ? 'text-amber-500/70' : 'text-muted-foreground')}>{item.label}</span>
                   <span className={cn('w-full truncate text-xs font-medium sm:text-sm', item.gold ? 'text-amber-400' : 'text-foreground')}>{item.value}</span>

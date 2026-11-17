@@ -258,7 +258,7 @@ const Index = () => {
               </p>
               <p>
                 <span className="text-foreground">Founding Board</span>:{' '}
-                <SmartLink href="https://www.btcpolicy.org">Bitcoin Policy Institute</SmartLink>,{' '}
+                 <SmartLink href="https://finneyfoundation.org">Finney Foundation</SmartLink>,{' '}
                 <SmartLink href="https://simplexnetwork.org/consortium.html">SimpleX Network Foundation</SmartLink>.
               </p>
             </div>
@@ -394,7 +394,7 @@ const Index = () => {
           <section className="space-y-4">
             <SectionHeading id="non-profit" title="Non Profit Disclosure" />
             <p className="text-sm leading-relaxed text-muted-foreground">
-              I am a member of three non profit boards. OpenSats, Bitcoin Policy Institute, and the SimpleX Network Foundation. It is volunteer work. I do not get paid.
+               I am a member of three non profit boards. OpenSats, Finney Foundation, and the SimpleX Network Foundation. It is volunteer work. I do not get paid.
             </p>
           </section>
 
